@@ -32,10 +32,9 @@ form {
     background: var(--color-1);
     color: #fff;
 }
-
-.form-info-wrapper p,
+ 
 .form-info-wrapper div {
-    margin-block: 3rem;
+    margin-block: 1rem;
 }
 
 .form > div { 
