@@ -17,21 +17,20 @@ form {
     align-items: center;
     display: flex;
     font-size: 1.1rem; 
-    justify-content: center;
-    margin-block: 2rem;
+    justify-content: center; 
 }
 
 .form { 
-    border-radius: 2rem;
-    box-shadow: 1px 2px 19px #ddd;
+    border-radius: 2rem; 
     display: flex;
-    justify-content: center; 
+    height: 100vh;
+    justify-content: space-between; 
+    width: 100vw;
 }
 
 .form-info-wrapper {
     background: var(--color-1);
-    color: #fff;;
-    width:18rem;
+    color: #fff;
 }
 
 .form-info-wrapper p,
@@ -50,7 +49,9 @@ form {
 }
 
 .form .input-container {
-    width: 50rem;
+    margin-inline: 12rem;
+    overflow-y: scroll;
+    width: 100rem;
 }
 
 .form .input-container .input-wrapper select {
@@ -113,8 +114,18 @@ label {
     text-align: center;
 }
 
+@media (max-width: 1444px) {
+    .form .input-container {
+        margin-inline: 0rem;
+    }
+}
+
 @media (max-width: 1088px) {
     .form .input-wrapper {
         flex-direction: column;
+    }
+
+    input {
+        width: 100%;
     }
 }
