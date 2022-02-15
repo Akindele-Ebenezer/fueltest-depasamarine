@@ -60,7 +60,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="appearance-result">
                         <label for="color">Color</label><br> 
                         <select name="color">
                             <option>Choose Color...</option>
