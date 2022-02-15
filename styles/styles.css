@@ -54,6 +54,7 @@ form {
 }
 
 .form .input-container .input-wrapper select {
+    margin-top: 1.5rem;
     transform: translateX(1rem);
 }
 
