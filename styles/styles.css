@@ -129,3 +129,9 @@ label {
         width: 100%;
     }
 }
+
+@media (max-width: 658px) {
+    .form-info-wrapper {
+        display: none;
+    }
+}
