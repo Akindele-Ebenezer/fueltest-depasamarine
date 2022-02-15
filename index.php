@@ -15,8 +15,7 @@
     <form action="">
         <div class="form">
             <div class="form-info-wrapper">
-                <h1>DEPASA Marine Int'l</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, sint.</p>
+                <h1>DEPASA Marine Int'l</h1> 
                 <div class="form-body-wrapper">
                     <div class="contact">
                         <div><img src="" alt="">  IMG</div>
