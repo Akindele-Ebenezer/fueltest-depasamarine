@@ -20,20 +20,12 @@
                 <div class="form-body-wrapper">
                     <div class="contact">
                         <div><img src="" alt="">  IMG</div>
-                        <div>Address</div>
+                        <div class="record-button">VIEW ALL RECORDS</div>
                     </div> 
                     <div class="contact">
                         <div><img src="" alt="">  IMG</div>
-                        <div>Phone</div>
-                    </div> 
-                    <div class="contact">
-                        <div><img src="" alt="">  IMG</div>
-                        <div>Email</div>
-                    </div> 
-                    <div class="contact">
-                        <div><img src="" alt="">  IMG</div>
-                        <div>Website</div>
-                    </div> 
+                        <div class="record-button">VIEW PREVIOUS RECORDS</div>
+                    </div>  
                 </div>
             </div>
             <div class="input-container">
@@ -41,31 +33,31 @@
                 <div class="input-wrapper">
                     <div>
                         <label for="sample_number">Sample No.</label><br>
-                        <input value="<?= rand(); ?>">
+                        <input name="sample_no" value="<?= rand(); ?>">
                     </div>
 
                     <div>
                         <label for="sample_collection_date">Sample Collection Date</label> <br>
-                        <input type="date" placeholder="date...">
+                        <input name="date" type="date" placeholder="date...">
                     </div>
 
                     <div>
                         <label for="truck_plate_no">Truck Plate No.</label><br>
-                        <input type="text" placeholder="Enter Plate No.">
+                        <input name="truck_plate_no" type="text" placeholder="Enter Plate No.">
                     </div>
 
                     <div>
                         <label for="tank_no">Tank No.</label><br>
-                        <input type="number" placeholder="Input No.">
+                        <input name="tank_no" type="number" placeholder="Input No.">
                     </div>
 
                     <div class="appearance-result">
                         <label for="apperance_result">Apperance Result</label><br>
-                        <input type="radio" value="Clear">
-                        <label for="clear">Clear</label>
-                        <br>
-                        <input type="radio" value="Muddy">
-                        <label for="muddy">Muddy</label>
+                        <select name="appearance_result" id="">
+                            <option value="C/M">C/M</option>
+                            <option value="Clear">Clear</option>
+                            <option value="Muddy">Muddy</option>
+                        </select>
                     </div>
 
                     <div>
@@ -80,37 +72,44 @@
 
                     <div>
                         <label for="density">Density at 27° C in Kg/l</label><br>
-                        <input type="text" placeholder="Input Density...">
+                        <input name="density" type="text" placeholder="Input Density...">
                     </div>
 
                     <div>
                         <label for="flash_point">Flash Point</label><br>
-                        <input type="text" placeholder="Enter Flash Point...">
+                        <input name="flash_point" type="text" placeholder="Enter Flash Point...">
                     </div>
 
                     <div>
                         <label for="temp">Temp</label><br>
-                        <input type="text" placeholder="Temperature...">
+                        <input name="temp" type="text" placeholder="Temperature...">
                     </div>
 
                     <div>
                         <label for="water">Water ASTM D2709-16</label><br>
-                        <input type="text" placeholder="Required...">
+                        <input name="water" type="text" placeholder="Required...">
                     </div>
 
                     <div>
                         <label for="cleanliness">Cleanliness</label><br>
-                        <input type="text" placeholder="Cleanliness...">
+                        <input name="cleanliness" type="text" placeholder="Cleanliness...">
                     </div>
 
                     <div>
                         <label for="date_of_test">Date Of Test</label><br>
-                        <input type="date" placeholder="Date...">
+                        <input name="date_of_test" type="date" placeholder="Date...">
                     </div>
 
                     <div>
                         <label for="full_name">Made By (Name)</label><br>
-                        <input type="text" placeholder="Full Name...">
+                        <input name="full_name" list="names" type="text" placeholder="Full Name...">
+                        <datalist id="names">
+                            <option value="Akindele Ebenezer"> 
+                            <option value="Awadhesh Tiwari"> 
+                            <option value="Seyi Okuyemi"> 
+                            <option value="Sola Blessing"> 
+                            <option value="Akindele Stella">     
+                        </datalist>
                     </div>
 
                 </div> 

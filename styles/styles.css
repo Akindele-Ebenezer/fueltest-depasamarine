@@ -34,6 +34,11 @@ form {
     width:18rem;
 }
 
+.form-info-wrapper p,
+.form-info-wrapper div {
+    margin-block: 3rem;
+}
+
 .form > div { 
     padding: 1rem;
 }
@@ -46,6 +51,10 @@ form {
 
 .form .input-container {
     width: 50rem;
+}
+
+.form .input-container .input-wrapper select {
+    transform: translateX(1rem);
 }
 
 form .input-wrapper {
@@ -95,3 +104,17 @@ label {
     margin-left: 1rem;
 }
  
+.form .record-button {
+    background: #0069a6;
+    border-radius: .5rem;
+    font-weight: bold;
+    letter-spacing: .09rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+@media (max-width: 1088px) {
+    .form .input-wrapper {
+        flex-direction: column;
+    }
+}
