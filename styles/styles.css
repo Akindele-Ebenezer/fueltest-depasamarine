@@ -56,6 +56,7 @@ form {
 .form .input-container .input-wrapper select {
     margin-top: 1.5rem;
     transform: translateX(1rem);
+    width: 21rem;
 }
 
 form .input-wrapper {
