@@ -59,14 +59,23 @@
                         <input type="number" placeholder="Input No.">
                     </div>
 
-                    <div>
+                    <div class="appearance-result">
                         <label for="apperance_result">Apperance Result</label><br>
-                        <input type="radio" placeholder="Pick an Option...">
+                        <input type="radio" value="Clear">
+                        <label for="clear">Clear</label>
+                        <br>
+                        <input type="radio" value="Muddy">
+                        <label for="muddy">Muddy</label>
                     </div>
 
                     <div>
-                        <label for="color">Color</label><br>
-                        <input type="checkbox" placeholder="Pick a Color...">
+                        <label for="color">Color</label><br> 
+                        <select name="color">
+                            <option>Choose Color...</option>
+                            <option value="Green">Green</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
                     </div>
 
                     <div>

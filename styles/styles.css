@@ -9,6 +9,10 @@
     --color-1: #007fc9;
 }
 
+.form .appearance-result {
+    width: 21rem;
+}
+
 form {
     align-items: center;
     display: flex;
@@ -78,6 +82,10 @@ input:focus {
 
 .input-container h1 {
     border-bottom: solid var(--color-1);
+}
+
+input[type="radio"] {
+    width: 1rem;
 }
 
 label {
