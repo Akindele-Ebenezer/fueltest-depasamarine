@@ -41,7 +41,7 @@
                 <div class="input-wrapper">
                     <div>
                         <label for="sample_number">Sample No.</label><br>
-                        <input type="number" placeholder="Enter No.">
+                        <input value="<?= rand(); ?>">
                     </div>
 
                     <div>
