@@ -94,8 +94,8 @@ input:focus {
     border-bottom: solid var(--color-1);
 }
 
-input[type="radio"] {
-    width: 1rem;
+input[type="button"] {
+    width: 50%;
 }
 
 label {
