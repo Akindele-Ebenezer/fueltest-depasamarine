@@ -94,10 +94,6 @@ input:focus {
     border-bottom: solid var(--color-1);
 }
 
-input[type="button"] {
-    width: 50%;
-}
-
 label {
     color: #222;
     font-weight: 600;
@@ -127,6 +123,11 @@ label {
 
     input {
         width: 100%;
+    }
+    
+    
+    input[type="button"] {
+        width: 50%;
     }
 }
 
