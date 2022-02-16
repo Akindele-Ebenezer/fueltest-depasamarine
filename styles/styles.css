@@ -20,6 +20,7 @@
 
 form {
     align-items: center;
+    background: #f8fcff;
     display: flex;
     font-size: 1.1rem; 
     justify-content: center; 
@@ -82,6 +83,10 @@ form .input-wrapper div {
 .form button,
 .form div h1 {
     margin-left: 1rem;
+}
+
+input {
+    background: #f8fcff;
 }
 
 input,
