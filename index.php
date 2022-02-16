@@ -23,6 +23,9 @@
                     <div class="contact"> 
                         <div class="record-button">VIEW PREVIOUS RECORDS</div>
                     </div>  
+                    <div class="contact"> 
+                        <div class="record-button">LOG OUT</div>
+                    </div> 
                 </div>
             </div>
             <div class="input-container">
