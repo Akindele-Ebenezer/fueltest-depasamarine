@@ -14,13 +14,16 @@
     align-self: center;
 }
 
+.edit-input {
+    border: none;
+}
+
 .form .appearance-result {
     width: 21rem;
 }
 
 form {
     align-items: center;
-    background: #f8fcff;
     display: flex;
     font-size: 1.1rem; 
     justify-content: center; 
@@ -85,10 +88,6 @@ form .input-wrapper div {
     margin-left: 1rem;
 }
 
-input {
-    background: #f8fcff;
-}
-
 input,
 .form button {
     border: none;
@@ -130,7 +129,8 @@ label {
 }
 
 .form .record-success li {
-    list-style: japanese-informal;
+    list-style: circle;
+    list-style-position: inside;
 }
 
 .form .record-success li span { 

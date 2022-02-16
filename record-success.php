@@ -33,7 +33,7 @@
 </head>
 <body>
     
-    <form action="">
+    <form action="record-success-edit.php" method="post">
         <div class="form">
             <div class="form-info-wrapper">
                 <h1>DEPASA Marine Int'l</h1> 
@@ -49,27 +49,29 @@
                     </div> 
                 </div>
             </div>
-            <div class="input-container align-self"> 
+            <div class="input-container"> 
                 <div class="record-success">
                     <h1>HELLO <?= $full_name; ?></h1>
-                    <p>Your RECORD with the SAMPLE NO. <?= $sample_no; ?> has been created Successfully.</p>
+                    <p>Your RECORD with the SAMPLE NO. <?= $sample_no; ?> has been created Successfully. <br> You can edit this RECORD if there's any other changes, then click SAVE RECORD Button below to save changes.</p>
                     <p>Go here to Insert New Record.</p>
 
                     <ul>
-                        <li><span>Sample Collection Date :</span> <?= $date; ?></li>
-                        <li> <span>Truck Plate No :</span> <?= $truck_plate_no; ?></li>
-                        <li> <span>Tank No :</span> <?= $tank_no; ?> </li>
-                        <li> <span>Apperance Result :</span> <?= $appearance_result; ?></li>
-                        <li><span>Color :</span> <?= $color; ?></li>
-                        <li><span> Density at 27° C in Kg/l :</span> <?= $density; ?></li>
-                        <li><span> Flash Point :</span> <?= $flash_point; ?></li>
-                        <li><span>Temp :</span> <?= $temp; ?></li>
-                        <li> <span>Water ASTM D2709-16 :</span> <?= $water; ?></li>
-                        <li><span> Cleanliness :</span> <?= $cleanliness; ?></li>
-                        <li> <span>Date Of Test :</span> <?= $date_of_test; ?></li>
-                        <li> <span>Full Name :</span> <?= $full_name; ?></li>
-                        <li> <span>Sample No :</span> <?= $sample_no; ?></li>
+                        <li><span>Sample Collection Date :</span> <input type="date" name="edit_sample_collection_date" value="<?= $date; ?>" class="edit-input"> </li>
+                        <li> <span>Truck Plate No :</span> <input type="text" name="edit_truck_plate_no" value="<?= $truck_plate_no; ?>" class="edit-input"> </li>
+                        <li> <span>Tank No :</span> <input type="text" name="edit_tank_no" value="<?= $tank_no; ?>" class="edit-input">  </li>
+                        <li> <span>Apperance Result :</span> <input type="text" name="edit_appearance_result" value="<?= $appearance_result; ?>" class="edit-input"> </li>
+                        <li><span>Color :</span> <input type="text" name="edit_color" value="<?= $color; ?>" class="edit-input"> </li>
+                        <li><span> Density at 27° C in Kg/l :</span> <input type="text" name="edit_density" value="<?= $density; ?>" class="edit-input"> </li>
+                        <li><span> Flash Point :</span> <input type="text" name="edit_flash_point" value="<?= $flash_point; ?>" class="edit-input"> </li>
+                        <li><span>Temp :</span> <input type="text" name="edit_temp" value="<?= $temp; ?>" class="edit-input"> </li>
+                        <li> <span>Water ASTM D2709-16 :</span> <input type="text" name="edit_water" value="<?= $water; ?>" class="edit-input"> </li>
+                        <li><span> Cleanliness :</span> <input type="text" name="edit_cleanliness" value="<?= $cleanliness; ?>" class="edit-input"> </li>
+                        <li> <span>Date Of Test :</span> <input type="date" name="edit_date_of_test" value="<?= $date_of_test; ?>" class="edit-input"> </li>
+                        <li> <span>Full Name :</span> <input type="text" name="edit_full_name" value="<?= $full_name; ?>" class="edit-input"> </li>
+                        <li> <span>Sample No :</span> <input type="text" name="edit_sample_no" value="<?= $sample_no; ?>" class="edit-input"> </li>
                     </ul>
+                    <br>
+                    <button type="submit" name="submit">SAVE RECORD</button>
                 </div>
             </div>
         </div>
