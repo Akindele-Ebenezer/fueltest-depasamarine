@@ -54,7 +54,7 @@
                     <div class="appearance-result">
                         <label for="apperance_result">Apperance Result</label><br>
                         <select name="appearance_result">
-                            <option value="Select a Result">C/M</option>
+                            <option value="Select Result">Select Result</option>
                             <option value="Clear">Clear</option>
                             <option value="Muddy">Muddy</option>
                         </select>
