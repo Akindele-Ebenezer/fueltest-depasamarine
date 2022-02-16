@@ -9,6 +9,11 @@
     --color-1: #007fc9;
 }
 
+
+.align-self {
+    align-self: center;
+}
+
 .form .appearance-result {
     width: 21rem;
 }
@@ -68,18 +73,19 @@ form .input-wrapper div {
     margin: 1rem;
 }
 
-form input[type="button"] {
+.form button {
     background: var(--color-1);
     border-radius: .5rem;
     color: #fff;
 }
 
-form input[type="button"],
+.form button,
 .form div h1 {
     margin-left: 1rem;
 }
 
-input {
+input,
+.form button {
     border: none;
     border-bottom: 1px solid #aaa; 
     outline: none;
@@ -109,6 +115,23 @@ label {
     letter-spacing: .09rem;
     padding: .5rem;  
 }
+
+.form .record-success h1 {
+    margin-bottom: 2rem;
+}
+
+.form .record-success p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.form .record-success li {
+    list-style: japanese-informal;
+}
+
+.form .record-success li span { 
+    font-weight: bold;
+} 
+
 
 @media (max-width: 1444px) {
     .form .input-container {

@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <form action="">
+    <form action="record-success.php" method="post">
         <div class="form">
             <div class="form-info-wrapper">
                 <h1>DEPASA Marine Int'l</h1> 
@@ -53,7 +53,7 @@
 
                     <div class="appearance-result">
                         <label for="apperance_result">Apperance Result</label><br>
-                        <select name="appearance_result" id="">
+                        <select name="appearance_result">
                             <option value="C/M">C/M</option>
                             <option value="Clear">Clear</option>
                             <option value="Muddy">Muddy</option>
@@ -114,7 +114,8 @@
 
                 </div> 
                 <br>
-                <input type="button" value="Submit">
+                
+                <button type="submit" name="submit">Submit</button>
             </div>
         </div>
     </form>
