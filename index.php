@@ -18,11 +18,11 @@
                 <h1>DEPASA Marine Int'l</h1> 
                 <div class="form-body-wrapper">
                     <div class="contact"> 
-                        <div class="record-button">VIEW ALL RECORDS</div>
-                    </div> 
-                    <div class="contact"> 
                         <div class="record-button">VIEW PREVIOUS RECORDS</div>
                     </div>  
+                    <div class="contact"> 
+                        <div class="record-button">VIEW ALL RECORDS</div>
+                    </div> 
                     <div class="contact"> 
                         <div class="record-button">LOG OUT</div>
                     </div> 
