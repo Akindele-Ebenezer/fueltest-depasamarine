@@ -1,0 +1,22 @@
+.Login-Wrapper { 
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.Login-Wrapper div { 
+    height: 100vh;
+    padding: 2rem; 
+}
+ 
+.Login-Wrapper input,
+.Login-Wrapper button {
+    padding: 1rem;
+    margin-block: 1rem;
+    width: 30rem;
+}
+
+.Login-Wrapper p {
+    margin-block: .5rem;
+    text-align: center;
+}
