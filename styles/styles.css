@@ -6,9 +6,22 @@
 }
 
 :root {
-    --color-1: #007fc9;
+    --color-2: cadetblue;
 }
 
+
+.alert {
+    background: lightgreen;
+    border-radius: .50rem;
+    font-style: italic;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    padding: .5rem;
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    width: 95vw;
+}
 
 .align-self {
     align-self: center;
@@ -56,6 +69,16 @@ form {
     margin-block: 1.5rem;
 }
 
+.form-fuel-test {
+    background-image: linear-gradient( to bottom, var(--color-1), #111);
+    color: antiquewhite;
+}
+
+.form-fuel-test h1 {
+    border-bottom: 7px solid var(--color-1);
+    border-top: 3px solid var(--color-1);
+}
+
 .form .input-container {
     margin-inline: 12rem;
     overflow-y: scroll;
@@ -63,6 +86,8 @@ form {
 }
 
 .form .input-container .input-wrapper select {
+    border: 3px solid var(--color-1);
+    border-radius: .5rem;
     margin-top: 1.5rem;
     transform: translateX(1rem);
     width: 21rem;
@@ -85,7 +110,7 @@ form .input-wrapper div {
 
 .form button,
 .form div h1 {
-    margin-left: 1rem;
+    margin: 2.5rem 1rem;
 }
 
 input,
@@ -102,7 +127,7 @@ input:focus {
 }
 
 .input-container h1 {
-    border-bottom: solid var(--color-1);
+    border-bottom: 1px solid var(--color-1);
 }
 
 label {
@@ -112,12 +137,11 @@ label {
     margin-left: 1rem;
 }
  
-.form .record-button {
-    background: #0069a6;
-    border-radius: .5rem;
+.form .record-button { 
+    border-left: 10px solid var(--color-1);
     font-weight: bold;
     letter-spacing: .09rem;
-    padding: .5rem;  
+    padding: .5rem; 
 }
 
 .form .record-success h1 {
@@ -129,6 +153,8 @@ label {
 }
 
 .form .record-success li {
+    background: #eee;  
+    border-top: 1px solid var(--color-1);
     list-style: circle;
     list-style-position: inside;
 }
@@ -136,6 +162,10 @@ label {
 .form .record-success li span { 
     font-weight: bold;
 } 
+
+#sign-up {
+    font-size: 1rem;
+}
 
 
 @media (max-width: 1444px) {
@@ -164,3 +194,4 @@ label {
         display: none;
     }
 }
+

@@ -1,0 +1,16 @@
+
+.header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: .09rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header div {
+  margin: .5rem;
+}
+ 

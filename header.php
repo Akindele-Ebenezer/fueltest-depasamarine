@@ -1,0 +1,30 @@
+<?php
+
+  include 'config.php';
+  error_reporting(0);
+ 
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Open+Sans&family=Rowdies:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/records.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title; ?></title>
+</head>
+<body>
+    
+    <div class="header"> 
+      <div>FUEL TEST</div>
+      <div><?= $header_info; ?></div>
+      <div>DEPASA</div>
+    </div>

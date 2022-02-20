@@ -1,0 +1,62 @@
+:root {
+    --color-1: #00592e;
+  }
+
+.auth span {
+    color: red;;
+}
+
+.login-wrapper .box-2 {
+    align-items: center;
+    display: flex;
+}
+
+.login-wrapper button {
+    background: var(--color-1);
+    border: none;
+    color: #fff;
+}
+
+.login-wrapper input {
+    border: 1px solid #bbb;
+    color: var(--color-1);
+    outline: none;
+}
+
+.login-wrapper input[type],
+button { 
+    border-radius: .5rem;
+    font-size: 1.2rem;
+}
+
+.login-wrapper {  
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: flex-start;
+}
+ 
+.login-wrapper .auth h1 {
+    border-bottom: 5px solid var(--color-1);
+}
+
+.login-wrapper .auth p button {
+    margin-left: 1rem;
+    width: fit-content;
+}
+
+.login-wrapper .box { 
+    height: 100vh;
+    padding-inline: 2rem; 
+}
+ 
+.login-wrapper input,
+.login-wrapper button {
+    padding: 1rem;
+    margin-block: 1rem;
+    width: 30rem;
+}
+
+.login-wrapper p { 
+    text-align: right;
+    transform: translateY(2rem);
+}
