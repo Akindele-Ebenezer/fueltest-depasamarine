@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -64,7 +64,7 @@ form {
 }
 
 .form div h1 {
-    font-family: 'Rowdies', cursive;
+    /* font-family: 'Rowdies', cursive; */
     font-size: 3.5rem;
     margin-block: 1.5rem;
 }
@@ -80,10 +80,13 @@ form {
 }
 
 .form .input-container {
+    font-size: larger;
     margin-inline: 12rem;
     overflow-y: scroll;
     width: 100rem;
 }
+
+
 
 .form .input-container .input-wrapper select {
     border: 3px solid var(--color-1);
@@ -117,6 +120,7 @@ input,
 .form button {
     border: none;
     border-bottom: 1px solid #aaa; 
+    font-size: large;
     outline: none;
     padding: 1rem;
     width: 21rem;
