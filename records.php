@@ -21,14 +21,7 @@
 
     
 ?>
-    <div class="login-wrapper">
-        <div style="background: url(images/fuel.jpg); 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh; width: 58rem;" class='login-wrapper-first box'> 
-        </div>
-        
+    <div class="login-wrapper">  
         <div class="records">
             <div class="records-headings">
                 <h1>DEPASAMARINE <span>Fuel Records</span></h1> 
