@@ -45,7 +45,7 @@
             </div>
             <div class="box box-2">
                 <div class="auth">
-                    <p>Don't have an account? <button>Sign Up</button></p>
+                    <p>Don't have an account? <button type="button">Sign Up</button></p>
                     <br><span><?= $error_double; ?></span>
                     <h1>Log In</h1> 
                     <br />  
