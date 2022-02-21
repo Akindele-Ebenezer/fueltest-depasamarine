@@ -172,7 +172,7 @@ label {
 
 @media (min-width: 1446px) { 
     .form .save-changes {
-        margin-inline: 0;
+        transform: translateX(-9rem);
     }
 }
 
