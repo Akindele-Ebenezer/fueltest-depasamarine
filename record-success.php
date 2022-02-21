@@ -93,19 +93,19 @@
                      
 
                     <ul>
-                        <li> <span>Sample Collection Date :</span> <input type="date" name="edit_sample_collection_date" value="<?= $sample_collection_date; ?>" class="edit-input"> </li>
-                        <li> <span>Truck Plate No :</span> <input type="text" name="edit_truck_plate_no" value="<?= $truck_plate_no; ?>" class="edit-input"> </li>
-                        <li> <span>Tank No :</span> <input type="text" name="edit_tank_no" value="<?= $tank_no; ?>" class="edit-input">  </li>
-                        <li> <span>Apperance Result :</span> <input type="text" name="edit_appearance_result" value="<?= $appearance_result; ?>" class="edit-input"> </li>
-                        <li> <span>Color :</span> <input type="text" name="edit_color" value="<?= $color; ?>" class="edit-input"> </li>
-                        <li> <span>Density at 27° C in Kg/l :</span> <input type="text" name="edit_density" value="<?= $density; ?>" class="edit-input"> </li>
-                        <li> <span>Flash Point :</span> <input type="text" name="edit_flash_point" value="<?= $flash_point; ?>" class="edit-input"> </li>
-                        <li> <span>Temp :</span> <input type="text" name="edit_temp" value="<?= $temp; ?>" class="edit-input"> </li>
-                        <li> <span>Water ASTM D2709-16 :</span> <input type="text" name="edit_water" value="<?= $water; ?>" class="edit-input"> </li>
-                        <li> <span>Cleanliness :</span> <input type="text" name="edit_cleanliness" value="<?= $cleanliness; ?>" class="edit-input"> </li>
-                        <li> <span>Date Of Test :</span> <input type="date" name="edit_date_of_test" value="<?= $date_of_test; ?>" class="edit-input"> </li>
-                        <li> <span>Full Name :</span> <input type="text" name="edit_full_name" value="<?= $full_name; ?>" class="edit-input"> </li>
-                        <li> <span>Sample No :</span> <input type="text" name="edit_sample_no" value="<?= $sample_no; ?>" class="edit-input"> </li>
+                        <li> <span>Sample Collection Date :</span> </li><input type="date" name="edit_sample_collection_date" value="<?= $sample_collection_date; ?>" class="edit-input">
+                        <li> <span>Truck Plate No :</span></li> <input type="text" name="edit_truck_plate_no" value="<?= $truck_plate_no; ?>" class="edit-input"> 
+                        <li> <span>Tank No :</span></li> <input type="text" name="edit_tank_no" value="<?= $tank_no; ?>" class="edit-input">  
+                        <li> <span>Apperance Result :</span>  </li><input type="text" name="edit_appearance_result" value="<?= $appearance_result; ?>" class="edit-input">
+                        <li> <span>Color :</span></li> <input type="text" name="edit_color" value="<?= $color; ?>" class="edit-input"> 
+                        <li> <span>Density at 27° C in Kg/l :</span></li> <input type="text" name="edit_density" value="<?= $density; ?>" class="edit-input"> 
+                        <li> <span>Flash Point :</span></li> <input type="text" name="edit_flash_point" value="<?= $flash_point; ?>" class="edit-input"> 
+                        <li> <span>Temp :</span></li> <input type="text" name="edit_temp" value="<?= $temp; ?>" class="edit-input"> 
+                        <li> <span>Water ASTM D2709-16 :</span></li> <input type="text" name="edit_water" value="<?= $water; ?>" class="edit-input"> 
+                        <li> <span>Cleanliness :</span> </li><input type="text" name="edit_cleanliness" value="<?= $cleanliness; ?>" class="edit-input"> 
+                        <li> <span>Date Of Test :</span> </li> <input type="date" name="edit_date_of_test" value="<?= $date_of_test; ?>" class="edit-input">
+                        <li> <span>Full Name :</span> </li><input type="text" name="edit_full_name" value="<?= $full_name; ?>" class="edit-input"> 
+                        <li> <span>Sample No :</span></li> <input type="text" name="edit_sample_no" value="<?= $sample_no; ?>" class="edit-input"> 
                     </ul>
                     <br>
                     <button type="submit" name="save_changes">SAVE CHANGES</button>
