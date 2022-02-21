@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="input-container"> 
+            <div class="input-container save-changes"> 
                 <div class="record-success">
                     <h1> <?= $full_name; ?></h1>
                     <p>Your RECORD with the SAMPLE NO. <?= $sample_no; ?> has been created Successfully. <br> You can edit this RECORD if there's any other changes, then click SAVE RECORD Button below to save changes. <br><br> Go here to Insert New Record.</p>
