@@ -36,7 +36,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                width: 58rem;" class='login-wrapper-first box'> 
+                width: 70vw;" class='login-wrapper-first box'> 
             </div>
 
             <div class="box box-2">
