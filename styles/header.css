@@ -14,7 +14,7 @@
   margin: .5rem;
 } 
 
-.header div a {
+.header div a, button a {
     color: #fff;
     text-decoration: none;
 }
