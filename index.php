@@ -1,5 +1,5 @@
 <?php
-    $header_info = "<p><Already have an account? <a href='login.php'>Log In</a></p>";
+    $header_info = "<a href='login.php'><p><Already have an account? Log In</p></a>";
     $title = 'FUEL TEST | Sign Up';
     include 'header.php';
 
