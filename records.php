@@ -24,7 +24,7 @@
     <div class="login-wrapper">  
         <div class="records">
             <div class="records-headings">
-                <h1>DEPASAMARINE <span>Fuel Records</span></h1> 
+                <h1>DEPASA MARINE <span>Fuel Records</span></h1> 
             </div>
             <form action="" method="post">
                 <button type="submit" name="export" id="export">Export to Excel</button>
