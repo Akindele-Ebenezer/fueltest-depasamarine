@@ -90,8 +90,7 @@ form {
 .form .input-container .input-wrapper select {
     border: 3px solid var(--color-1);
     border-radius: .5rem;
-    margin-top: 1.5rem;
-    transform: translateX(1rem);
+    margin-top: 1.5rem; 
     width: 21rem;
 }
 
@@ -101,6 +100,7 @@ form .input-wrapper {
 }
 
 form .input-wrapper div {
+    box-shadow: 1px 2px 19px #ddd;
     margin: 1rem;
 }
 
@@ -134,10 +134,13 @@ input:focus {
 }
 
 label {
+    background: #ddd;
     color: #222;
+    display: block;
     font-weight: 600;
     letter-spacing: .05rem;
     margin-left: 1rem;
+    padding-inline: 1rem;
 }
  
 .form .record-button { 
