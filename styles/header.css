@@ -12,5 +12,11 @@
 
 .header div {
   margin: .5rem;
+} 
+
+.header div a {
+    color: #fff;
+    text-decoration: none;
 }
+
  
