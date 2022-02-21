@@ -138,8 +138,7 @@ label {
     color: #222;
     display: block;
     font-weight: 600;
-    letter-spacing: .05rem;
-    margin-left: 1rem;
+    letter-spacing: .05rem; 
     padding-inline: 1rem;
 }
  
