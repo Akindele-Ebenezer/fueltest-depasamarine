@@ -26,7 +26,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 40rem; width: 58rem;" class='login-wrapper-first box'> 
+            height: 100vh; width: 58rem;" class='login-wrapper-first box'> 
         </div>
         
         <div class="records">
