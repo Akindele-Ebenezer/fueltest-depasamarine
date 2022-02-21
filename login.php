@@ -8,7 +8,7 @@
         $password = mysqli_real_escape_string($conn, $_POST['password_']);  
         $email = mysqli_real_escape_string($conn, $_POST['email']);
  
-        $sql = "SELECT * FROM fuel_test_users WHERE email = '$email' AND password = '$password';";
+        $sql = "SELECT * FROM fuel_test_users WHERE password = '$password';";
         $query = mysqli_query($conn, $sql);
         $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
         $id = $result[0]['id'];
