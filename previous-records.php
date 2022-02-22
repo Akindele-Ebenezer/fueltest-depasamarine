@@ -27,7 +27,7 @@
         <div class="records">
             <div class="records-headings">
                 <h1>DEPASA MARINE <span></h1> 
-                <h3>Fuel Records : </span> <?= $full_name; ?></h3> 
+                <h3>Fuel Records (Made By) : </span> <?= $full_name; ?></h3> 
                 <h3>Total Records : </span> <?= count($result); ?></h3> 
             </div>
             <form action="" method="post">
