@@ -3,9 +3,10 @@
     include 'auth.php'; 
     $title = 'Fuel Test | All Records'; 
     include 'header.php'; 
- 
-
-    $sql= "SELECT * FROM fuel_test_records WHERE full_name = '$full_name' ORDER BY sample_collection_date DESC;";
+    
+    $uid = $_SESSION["uid"]; 
+    
+    $sql= "SELECT * FROM fuel_test_records WHERE uid = '$uid' ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
@@ -27,8 +28,8 @@
         <div class="records">
             <div class="records-headings">
                 <h1>DEPASA MARINE <span></h1> 
-                <h3>Fuel Records (Made By) : </span> <?= $full_name; ?></h3> 
-                <h3>Total Records : </span> <?= count($result); ?></h3> 
+                <h3 class="align-self">Fuel Records (Made By) : </span> <?= $full_name; ?></h3> 
+                <h3 class="align-self">Total Records : </span> <?= count($result); ?></h3> 
             </div>
             <form action="" method="post">
                 <button type="submit" name="export" id="export">Export to Excel</button>

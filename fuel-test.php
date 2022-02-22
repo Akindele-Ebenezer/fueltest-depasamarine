@@ -106,6 +106,8 @@
                         <label for="date_of_test">Date Of Test</label><br>
                         <input name="date_of_test" type="date" placeholder="Date...">
                     </div>
+ 
+                        <input name="uid" type="hidden" value="<?= $id; ?>"> 
 
                     <div>
                         <label for="full_name">Made By (Name)</label><br>

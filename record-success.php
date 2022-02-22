@@ -4,12 +4,15 @@
     $title = 'FUEL TEST | Record Created';
     include 'header.php';
 
+    $uid = mysqli_real_escape_string($conn, $_POST['uid']); 
+    $_SESSION["uid"] = $uid;
     
     $sql = "SELECT * FROM fuel_test_users WHERE id = '$id';";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
     if(isset($_POST['create_record'])) {
+        $_uid = mysqli_real_escape_string($conn, $_POST['uid']);
         $create_record = mysqli_real_escape_string($conn,  $_POST['create_record']);
         $sample_no = mysqli_real_escape_string($conn,  $_POST['sample_no']);
         $sample_collection_date = strtotime($_POST['sample_collection_date']); 
@@ -28,11 +31,12 @@
         $date_of_test = date('Y-m-d', $date_of_test);
         $date_of_test = mysqli_real_escape_string($conn, $date_of_test);
         $full_name = mysqli_real_escape_string($conn,  $_POST['full_name']);
-    
-        $sql = "INSERT INTO fuel_test_records (sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness, date_of_test, full_name) VALUES ('$sample_no', '$sample_collection_date', '$truck_plate_no', '$tank_no', '$appearance_result', '$color', '$density', '$flash_point', '$temp', '$water', '$cleanliness', '$date_of_test', '$full_name');";
+        
+        $sql = "INSERT INTO fuel_test_records (sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness, date_of_test, full_name, uid) VALUES ('$sample_no', '$sample_collection_date', '$truck_plate_no', '$tank_no', '$appearance_result', '$color', '$density', '$flash_point', '$temp', '$water', '$cleanliness', '$date_of_test', '$full_name', '$uid');";
     
         $query = mysqli_query($conn, $sql);
-    }
+
+        }
 
     
     if (isset($_POST['save_changes'])) {
@@ -64,6 +68,7 @@
                     </div>        
                 </div>";
     }
+
 ?>
      
     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
