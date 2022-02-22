@@ -135,6 +135,7 @@ input:focus {
 
 label:not(.box-2 .auth label) {
     background: #ddd;
+    border-radius: 1rem 1rem 0 0;
     color: #222;
     display: block;
     font-weight: 600;
