@@ -25,7 +25,7 @@
 <body>
     
     <div class="header"> 
-      <div>FUEL TEST</div>
-      <div><a href="login.php"><?= $header_info; ?></a></div>
-      <div>DEPASA</div>
+      <div><a href="fuel-test.php">FUEL TEST</a></div>
+      <div><a href="login.php"><?= $header_info; ?></div>
+        <div><a href="fuel-test.php">DEPASA</a></div>
     </div>
