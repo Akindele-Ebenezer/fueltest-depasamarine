@@ -58,9 +58,4 @@ button {
 .login-wrapper p { 
     text-align: right;
     transform: translateY(2rem);
-} 
-
-.login-wrapper form .auth label {
-    background: #fff;
-    display: unset;
-}
+}  
