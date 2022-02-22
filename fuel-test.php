@@ -19,13 +19,13 @@
                 <h1>DEPASA Marine Int'l</h1> 
                 <div class="form-body-wrapper">
                     <div class="contact"> 
-                        <div class="record-button">VIEW PREVIOUS RECORDS</div>
+                        <div class="record-button"><a href="records.php">VIEW PREVIOUS RECORDS</a></div>
                     </div>  
                     <div class="contact"> 
-                        <div class="record-button">VIEW ALL RECORDS</div>
+                        <div class="record-button"><a href="records.php">VIEW ALL RECORDS</a></div>
                     </div> 
                     <div class="contact"> 
-                        <div class="record-button">LOG OUT</div>
+                        <div class="record-button"><a href="logout.php">LOG OUT</a></div>
                     </div> 
                     <div>
                         <p><?php $user_name = print_r($result[0]['name']); echo $user_name; ?></p>
