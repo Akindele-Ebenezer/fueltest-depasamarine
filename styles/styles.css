@@ -149,6 +149,11 @@ label {
     padding: .5rem; 
 }
 
+.form .record-button a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
 .form .record-success h1 {
     margin-bottom: 2rem;
 }
