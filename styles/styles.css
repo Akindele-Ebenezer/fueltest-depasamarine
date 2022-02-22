@@ -151,6 +151,7 @@ label {
 
 .form .record-button a {
     color: antiquewhite;
+    display: block;
     text-decoration: none;
 }
 
