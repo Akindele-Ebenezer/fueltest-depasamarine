@@ -1,9 +1,13 @@
 :root {
     --color-1: #00592e;
   }
-
 .auth span {
     color: red;;
+}
+
+form .auth label {
+    background: #fff;
+    display: unset;
 }
 
 .login-wrapper .box-2 {
