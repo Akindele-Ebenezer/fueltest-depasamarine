@@ -72,7 +72,7 @@
                 <h1>DEPASA Marine Int'l</h1> 
                 <div class="form-body-wrapper">
                     <div class="contact"> 
-                        <div class="record-button"><a href="records.php">VIEW PREVIOUS RECORDS</a></div>
+                        <div class="record-button"><a href="previous-records.php">VIEW PREVIOUS RECORDS</a></div>
                     </div>  
                     <div class="contact"> 
                         <div class="record-button"><a href="fuel-test.php">CREATE NEW RECORD</a></div>

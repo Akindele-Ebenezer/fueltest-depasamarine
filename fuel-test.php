@@ -9,8 +9,7 @@
     $sql = "SELECT * FROM fuel_test_users WHERE id = '$id';";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
-    
-    
+     
 ?>
 
     <form action="record-success.php" method="post">
@@ -19,7 +18,7 @@
                 <h1>DEPASA Marine Int'l</h1> 
                 <div class="form-body-wrapper">
                     <div class="contact"> 
-                        <div class="record-button"><a href="records.php">VIEW PREVIOUS RECORDS</a></div>
+                        <div class="record-button"><a href="previous-records.php">VIEW PREVIOUS RECORDS</a></div>
                     </div>  
                     <div class="contact"> 
                         <div class="record-button"><a href="fuel-test.php">CREATE NEW RECORD</a></div>
@@ -31,8 +30,8 @@
                         <div class="record-button"><a href="logout.php">LOG OUT</a></div>
                     </div> 
                     <div>
-                        <p><?php $user_name = print_r($result[0]['name']); echo $user_name; ?></p>
-                        <p><?php $email = print_r($result[0]['email']); echo $email; ?></p>
+                        <p><?php $user_name = print_r($result[0]['name']); ?></p>
+                        <p><?php $email = print_r($result[0]['email']); ?></p>
                     </div>
                 </div>
             </div>

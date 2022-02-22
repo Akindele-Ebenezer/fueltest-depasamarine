@@ -1,13 +1,15 @@
 <?php
 
     include 'auth.php'; 
-    $title = 'Fuel Test | All Records';
+    $title = 'Fuel Test | All Records'; 
     include 'header.php'; 
  
 
-    $sql= "SELECT * FROM fuel_test_records ORDER BY sample_collection_date DESC;";
+    $sql= "SELECT * FROM fuel_test_records WHERE full_name = '$full_name' ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
+
+    $total_records = count($result); 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
