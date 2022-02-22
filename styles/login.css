@@ -5,11 +5,6 @@
     color: red;;
 }
 
-form .auth label {
-    background: #fff;
-    display: unset;
-}
-
 .login-wrapper .box-2 {
     align-items: center;
     display: flex;
@@ -63,4 +58,9 @@ button {
 .login-wrapper p { 
     text-align: right;
     transform: translateY(2rem);
+} 
+
+.login-wrapper form .auth label {
+    background: #fff;
+    display: unset;
 }
