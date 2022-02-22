@@ -22,6 +22,9 @@
                         <div class="record-button"><a href="records.php">VIEW PREVIOUS RECORDS</a></div>
                     </div>  
                     <div class="contact"> 
+                        <div class="record-button"><a href="records.php">CREATE NEW RECORD</a></div>
+                    </div> 
+                    <div class="contact"> 
                         <div class="record-button"><a href="records.php">VIEW ALL RECORDS</a></div>
                     </div> 
                     <div class="contact"> 
