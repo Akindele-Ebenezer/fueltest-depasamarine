@@ -30,8 +30,8 @@
     <div class="login-wrapper">  
         <div class="records">
             <div class="records-headings">
-                <h1>DEPASA MARINE <span></h1> 
-<!--                 <h3 class="align-self">User Name : </span> <?= $full_name; ?></h3> 
+ <!--           <h1>DEPASA MARINE <span></h1> 
+                <h3 class="align-self">User Name : </span> <?= $full_name; ?></h3> 
                 <h3 class="align-self">Total Records : </span> <?= count($result); ?></h3>  -->
             </div>
             <form action="" method="post">
