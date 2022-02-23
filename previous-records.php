@@ -4,8 +4,9 @@
     $title = 'Fuel Test | All Records'; 
     include 'header.php'; 
     
-    $uid = $_SESSION["uid"]; 
+    $uid = $id; 
     $full_name = $result2[0]["name"];
+
     $sql= "SELECT * FROM fuel_test_records WHERE uid = '$uid' ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
