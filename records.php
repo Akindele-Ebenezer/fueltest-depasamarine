@@ -5,7 +5,7 @@
 
     $full_name = $result2[0]["name"];
 
-    $header_info = "<h3>User Name : </span> <?= $full_name; ?></h3> <h3>Total Records : </span> <?= count($result); ?></h3> ";
+    $header_info = "<h3>User Name : <?= $full_name; ?></h3> <h3>Total Records : <?= count($result); ?></h3> ";
     $title = 'Fuel Test | All Records';
 
     include 'header.php'; 
