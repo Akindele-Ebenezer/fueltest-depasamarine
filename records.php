@@ -14,6 +14,7 @@
     $title = 'Fuel Test | All Records';
 
     include 'header.php'; 
+
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // $export = $_POST['export'];
