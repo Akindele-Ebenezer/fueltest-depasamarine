@@ -5,7 +5,7 @@
 #export {
     position: absolute;
     right: 2rem;
-    top: 7.25rem;
+    top: 5.25rem;
     width: fit-content;
 }
 
@@ -36,12 +36,8 @@
 }
 
 .records h1,
-.records h2 { 
-    border-radius: 1rem;
-    color: #444; 
-    margin-left: 1rem;
-    padding-block: 1rem;
-    padding-inline: .5rem;
+.records h2 {  
+    color: #444;  
 }
  
 .record-success p {
