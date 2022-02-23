@@ -5,6 +5,8 @@
     include 'header.php'; 
  
 
+    $full_name = $result2[0]["name"];
+
     $sql= "SELECT * FROM fuel_test_records ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
@@ -25,7 +27,7 @@
         <div class="records">
             <div class="records-headings">
                 <h1>DEPASA MARINE <span></h1> 
-                <h3>Fuel Records (Made By) : </span> <?= $full_name; ?></h3> 
+                <h3>User Name : </span> <?= $full_name; ?></h3> 
                 <h3>Total Records : </span> <?= count($result); ?></h3> 
             </div>
             <form action="" method="post">
