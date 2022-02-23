@@ -3,17 +3,17 @@
     include 'auth.php'; 
  
 
+
+    $sql= "SELECT * FROM fuel_test_records ORDER BY sample_collection_date DESC;";
+    $query = mysqli_query($conn, $sql);
+    $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
+
     $full_name = $result2[0]["name"];
 
     $header_info = "<h3>User Name : <?= $full_name; ?></h3> <h3>Total Records : <?= count($result); ?></h3> ";
     $title = 'Fuel Test | All Records';
 
     include 'header.php'; 
-
-    $sql= "SELECT * FROM fuel_test_records ORDER BY sample_collection_date DESC;";
-    $query = mysqli_query($conn, $sql);
-    $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
-
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // $export = $_POST['export'];
