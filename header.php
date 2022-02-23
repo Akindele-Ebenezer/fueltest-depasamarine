@@ -25,6 +25,6 @@
     
     <div class="header"> 
       <div><a href="fuel-test.php">FUEL TEST</a></div>
-      <div><?= $header_info; ?></div>
+      <div class="header-record-info"><?= $header_info; ?></div>
         <div><a href="fuel-test.php">DEPASA</a></div>
     </div>

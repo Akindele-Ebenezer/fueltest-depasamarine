@@ -5,7 +5,7 @@
 #export {
     position: absolute;
     right: 2rem;
-    top: 5.25rem;
+    top: 2.25rem;
     width: fit-content;
 }
 
@@ -20,6 +20,15 @@
 .records .all-records {
     height: 70vh;
     overflow: scroll;
+}
+
+.header-record-info {
+    display: flex;
+    font-size: small;
+}
+
+.header-record-info h3 {
+    margin-inline: 5rem;
 }
 
 .records .records-headings {

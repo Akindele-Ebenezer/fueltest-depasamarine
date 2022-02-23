@@ -1,17 +1,24 @@
 <?php
 
-    include 'auth.php'; 
-    $title = 'Fuel Test | All Records'; 
-    include 'header.php'; 
+    include 'auth.php';
     
     $uid = $id; 
     $full_name = $result2[0]["name"];
+ 
 
-    $sql= "SELECT * FROM fuel_test_records WHERE uid = '$uid' ORDER BY sample_collection_date DESC;";
+    $sql= "SELECT
+    sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness,
+    date_of_test, full_name, uid 
+    FROM fuel_test_records WHERE uid = '$uid' GROUP BY sample_no ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
     $total_records = count($result); 
+    $header_info = "<h3>Current User : <br>  $full_name </h3> <h3>Status : <br>  Online </h3> <h3>Total Records : <br>  " . count($result) . "</h3> <h3>No. of Users : <br>  " . count($result3) . " </h3>";
+    $title = 'Fuel Test | All Records'; 
+
+    include 'header.php';
+     
     echo $_SESSION["user_name"]; 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -26,12 +33,7 @@
     
 ?>
     <div class="login-wrapper">  
-        <div class="records">
-            <div class="records-headings">
-                <h1>DEPASA MARINE <span></h1> 
-                <h3 class="align-self">Fuel Records (Made By) : </span> <?= $full_name; ?></h3> 
-                <h3 class="align-self">Total Records : </span> <?= count($result); ?></h3> 
-            </div>
+        <div class="records"> 
             <form action="" method="post">
                 <button type="submit" name="export" id="export">Export to Excel</button>
                 <div class="all-records">

@@ -4,13 +4,16 @@
  
 
 
-    $sql= "SELECT * FROM fuel_test_records ORDER BY sample_collection_date DESC;";
+    $sql= "SELECT
+    sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness,
+    date_of_test, full_name, uid 
+    FROM fuel_test_records GROUP BY sample_no;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
     $full_name = $result2[0]["name"];
 
-    $header_info = "<h3>User Name : <?= $full_name; ?></h3> <h3>Total Records : <?= count($result); ?></h3> ";
+    $header_info = "<h3>Current User : <br>  $full_name </h3> <h3>Status : <br>  Online </h3>  <h3>Total Records : <br> " . count($result1) . "</h3> <h3>No. of Users : <br> " . count($result3) . " </h3>";
     $title = 'Fuel Test | All Records';
 
     include 'header.php'; 
