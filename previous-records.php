@@ -5,16 +5,16 @@
     include 'header.php'; 
     
     $uid = $_SESSION["uid"]; 
-    
+    $full_name = $result2[0]["name"];
     $sql= "SELECT * FROM fuel_test_records WHERE uid = '$uid' ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
     $total_records = count($result); 
+    echo $_SESSION["user_name"]; 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-        // $export = $_POST['export'];
+ 
         header("Content-Type: application/xls");    
         header("Content-Disposition: attachment; filename=DEPASA Fuel Test Records.xls");  
         header("Pragma: no-cache"); 
