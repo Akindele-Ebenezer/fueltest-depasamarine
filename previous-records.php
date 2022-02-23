@@ -35,7 +35,7 @@
     <div class="login-wrapper">  
         <div class="records"> 
                 <div class="records-nav">
-                    <a href="http://">VIEW PREVIOUS RECORDS</a><a href="http://">CREATE NEW RECORD</a><a href="http://">VIEW ALL RECORDS</a><a href="http://">LOG OUT</a>
+                    <a href="previous-records.php">VIEW PREVIOUS RECORDS</a><a href="fuel-test.php">CREATE NEW RECORD</a><a href="records.php">VIEW ALL RECORDS</a><a href="logout.php">LOG OUT</a>
                 </div>
             <form action="" method="post" class="table">
                 <button type="submit" name="export" id="export">Export to Excel</button>

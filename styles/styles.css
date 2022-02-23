@@ -49,6 +49,11 @@ form {
     width: 100vw;
 }
 
+form button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .form-info-wrapper {
     background: var(--color-1);
     color: #fff;
@@ -227,6 +232,12 @@ a:hover {
 }
 
 @media (max-width: 658px) {
+    .form .appearance-result,
+    .form .input-container .input-wrapper .appearance-result select,
+    .form button {
+        width: 90vw;
+    }
+
     .form-info-wrapper {
         display: none;
     }
