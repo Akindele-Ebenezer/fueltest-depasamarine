@@ -5,7 +5,7 @@
 #export {
     position: absolute;
     right: 2rem;
-    top: 2.25rem;
+    top: 4.25rem;
     width: fit-content;
 }
 
@@ -20,6 +20,18 @@
 .records .all-records {
     height: 70vh;
     overflow: scroll;
+}
+
+.records-nav {
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+    letter-spacing: .05rem;
+    margin-top: 2rem;
+}
+
+.records-nav a {
+    margin-inline: 2rem;
 }
 
 .header-record-info {
@@ -63,6 +75,10 @@ table {
     padding-block: 3rem;
     width: max-content;
     transform: translateY(4rem);
+}
+
+.table {
+    margin-top: 4rem;
 }
 
 table tr th,

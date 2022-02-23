@@ -34,7 +34,10 @@
 ?>
     <div class="login-wrapper">  
         <div class="records"> 
-            <form action="" method="post">
+                <div class="records-nav">
+                    <a href="http://">VIEW PREVIOUS RECORDS</a><a href="http://">CREATE NEW RECORD</a><a href="http://">VIEW ALL RECORDS</a><a href="http://">LOG OUT</a>
+                </div>
+            <form action="" method="post" class="table">
                 <button type="submit" name="export" id="export">Export to Excel</button>
                 <div class="all-records">
                     <table>

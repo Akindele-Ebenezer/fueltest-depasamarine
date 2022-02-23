@@ -32,7 +32,7 @@
 ?>
     <div class="login-wrapper">  
         <div class="records"> 
-            <form action="" method="post">
+            <form action="" method="post" class="table">
                 <button type="submit" name="export" id="export">Export to Excel</button>
                 <div class="all-records">
                     <table>

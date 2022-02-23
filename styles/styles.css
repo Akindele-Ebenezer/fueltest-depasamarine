@@ -185,6 +185,19 @@ label:not(.box-2 .auth label) {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: green;
+}
+
+a:hover {
+    border-bottom: 1px solid wheat;
+    font-weight: bold;
+}
+
 @media (min-width: 1446px) { 
     .form .save-changes {
         transform: translateX(-9rem);

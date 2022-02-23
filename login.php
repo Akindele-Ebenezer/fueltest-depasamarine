@@ -1,4 +1,5 @@
-<?php
+<?php 
+ 
     $header_info = "<a href='index.php'>Don't have an account? Sign Up</a>";
     $title = 'FUEL TEST | Log In';
     include 'header.php';
