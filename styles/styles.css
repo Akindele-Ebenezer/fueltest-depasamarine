@@ -232,11 +232,7 @@ a:hover {
     .form-fuel-test {
         width: 30rem;
     }
-    
-    .form .input-container {
-        margin-inline: 0;
-    } 
-    
+     
     .form .input-container .input-wrapper select,
     input {
         width: 100%;
