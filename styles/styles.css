@@ -218,6 +218,10 @@ a:hover {
 }
 
 @media (min-width: 1088px) {
+    .form .save-changes {
+        margin-inline: 12rem;
+    }
+    
     .form-fuel-test {
         width: 30rem;
     }
