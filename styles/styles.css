@@ -222,7 +222,8 @@ a:hover {
         flex-direction: column;
     }
 
-    input {
+    input,
+    .form .input-container .input-wrapper .appearance-result select {
         width: 100%;
     }
     
