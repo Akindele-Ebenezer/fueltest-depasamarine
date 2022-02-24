@@ -243,7 +243,7 @@ a:hover {
     }
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1350px) {
     
     .form .input-container .input-wrapper .appearance-result {
         width: 95%;   
