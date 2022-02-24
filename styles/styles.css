@@ -108,7 +108,7 @@ form .input-wrapper {
 form .input-wrapper div {
     border-radius: 1rem 1rem 0 0;
     box-shadow: 1px 2px 19px #ddd;
-    margin: 1rem;
+    margin: 1rem 1.5rem;
 }
 
 .form button {
@@ -147,7 +147,7 @@ label:not(.box-2 .auth label) {
     display: block;
     font-weight: 600;
     letter-spacing: .05rem; 
-    padding-inline: 1rem;
+    padding: 1rem;
 }
  
 .form .record-button { 
