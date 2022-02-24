@@ -227,7 +227,8 @@ a:hover {
         width: 100%;
     }
      
-    form .input-wrapper div {
+    form .input-wrapper div,
+    .form button {
         width: 95%
     }
     
@@ -243,8 +244,7 @@ a:hover {
 }
 
 @media (max-width: 658px) {
-    .form .appearance-result, 
-    .form button {
+    .form .appearance-result {
         width: 90vw;
     }
 
