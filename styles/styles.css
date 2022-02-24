@@ -94,7 +94,7 @@ form button:hover {
 
 
 .form .input-container .input-wrapper select {
-    border: 3px solid var(--color-1);
+    border: 3px solid #a8caa8;
     border-radius: .5rem;
     margin-top: 1.5rem; 
     width: 21rem;
