@@ -180,9 +180,11 @@ label:not(.box-2 .auth label) {
     margin-bottom: 2rem;
 }
 
-.form .record-success li {
-    background: #ddd;  
-    border-radius: 1rem 1rem 0 0; 
+.form .record-success li { 
+    background-image: linear-gradient( to bottom, var(--color-1), #111);
+    border-radius: 1rem 1rem 0 0;
+    color: #fff; 
+    letter-spacing: .1rem;
     list-style: circle;
     list-style-position: inside;
     margin-block: 1.5rem;
