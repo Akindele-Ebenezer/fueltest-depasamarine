@@ -152,7 +152,7 @@ input:focus {
 label:not(.box-2 .auth label) {
     background-image: linear-gradient( to bottom left, #014d29, #222);
     border-radius: 1rem 1rem 0 0;
-    color: #222;
+    color: #fff;
     display: block;
     font-weight: 600;
     letter-spacing: .05rem; 
