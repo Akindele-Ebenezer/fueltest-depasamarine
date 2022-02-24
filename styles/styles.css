@@ -218,11 +218,16 @@ a:hover {
 }
 
 @media (min-width: 1088px) {
+    .form-fuel-test {
+        width: 30rem;
+    }
+    
     .form .input-container {
         margin-inline: 0;
     } 
     
-    .form .input-container .input-wrapper select {
+    .form .input-container .input-wrapper select,
+    input {
         width: 100%;
     }
     
