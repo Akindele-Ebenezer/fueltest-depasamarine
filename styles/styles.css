@@ -132,6 +132,11 @@ input,
     width: 21rem;
 }
 
+.form button {
+    margin-left: 3rem;
+    width: 45%;
+}
+
 input:focus {
     border-bottom: solid var(--color-1);
 }
