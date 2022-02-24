@@ -91,7 +91,9 @@ form button:hover {
     width: 100rem;
 }
 
-
+.form .fuel-test {
+    margin-inline: 0;
+}
 
 .form .input-container .input-wrapper select {
     border: 3px solid #a8caa8;
@@ -124,12 +126,15 @@ form .input-wrapper div {
 
 input,
 .form button {
-    border: none;
-    border-bottom: 1px solid #aaa; 
+    border: 1px solid green;
     font-size: large;
     outline: none;
     padding: 1rem;
     width: 21rem;
+}
+
+input[placeholder] {
+    color: var(--color-1);   
 }
 
 .form button { 
@@ -145,7 +150,7 @@ input:focus {
 }
 
 label:not(.box-2 .auth label) {
-    background: #ddd;
+    background-image: linear-gradient( to bottom left, #014d29, #222);
     border-radius: 1rem 1rem 0 0;
     color: #222;
     display: block;
