@@ -132,8 +132,7 @@ input,
     width: 21rem;
 }
 
-.form button {
-    margin-left: 3rem;
+.form button { 
     width: 45%;
 }
 
