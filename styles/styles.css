@@ -217,6 +217,17 @@ a:hover {
     }
 }
 
+@media (min-width: 1088px) {
+    .form .input-container .input-wrapper select {
+        width: 100%;
+    }
+    
+    form .input-wrapper div,
+    .form .appearance-result {
+        width: 45%;
+    }
+}
+
 @media (max-width: 1088px) {
     
     .form .input-container .input-wrapper .appearance-result {
