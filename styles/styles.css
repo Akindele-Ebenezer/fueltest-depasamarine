@@ -176,6 +176,8 @@ label:not(.box-2 .auth label) {
     border-radius: 1rem 1rem 0 0; 
     list-style: circle;
     list-style-position: inside;
+    margin-block: 1.5rem;
+    padding: 1rem;
 }
 
 .form .record-success li span { 
