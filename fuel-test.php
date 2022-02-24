@@ -124,7 +124,7 @@
                 </div> 
                 <br>
                 
-                <button type="submit" name="create_record">Create Record</button>
+                <center><button type="submit" name="create_record">Create Record</button></center>
             </div>
         </div>
     </form>
