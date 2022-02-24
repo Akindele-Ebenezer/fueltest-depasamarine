@@ -24,11 +24,7 @@
 
 .align-self {
     align-self: center;
-}
-
-.edit-input {
-    border: none;
-}
+} 
 
 .form .appearance-result {
     width: 21rem;
