@@ -226,11 +226,11 @@ a:hover {
     .form .input-container .input-wrapper .appearance-result select {
         width: 100%;
     }
-    
-    .form .input-wrapper {
-        flex-direction: column;
+     
+    form .input-wrapper div {
+        width: 95%
     }
-
+    
     input {
         width: 100%;
     }
@@ -243,8 +243,7 @@ a:hover {
 }
 
 @media (max-width: 658px) {
-    .form .appearance-result,
-    .form .input-container .input-wrapper .appearance-result select,
+    .form .appearance-result, 
     .form button {
         width: 90vw;
     }
