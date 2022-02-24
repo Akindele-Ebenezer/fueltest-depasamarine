@@ -14,7 +14,7 @@
 
     <form action="record-success.php" method="post">
         <div class="form">
-            <div class="form-info-wrapper form-fuel-test">
+            <div class="form-info-wrapper">
                 <h1>DEPASA Marine Int'l</h1> 
                 <div class="form-body-wrapper">
                     <div class="contact"> 
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="input-container">
+            <div class="input-container form-fuel-test">
                 <h1>FUEL TEST</h1>
                 <div class="input-wrapper">
                     <div>
