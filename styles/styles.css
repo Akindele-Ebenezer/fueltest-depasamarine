@@ -218,8 +218,16 @@ a:hover {
 }
 
 @media (min-width: 1088px) {
+    .form .input-container {
+        margin-inline: 0;
+    } 
+    
     .form .input-container .input-wrapper select {
         width: 100%;
+    }
+    
+    form .input-wrapper {
+        justify-content: center;
     }
     
     form .input-wrapper div,
