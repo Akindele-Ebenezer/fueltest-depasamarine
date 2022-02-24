@@ -181,7 +181,7 @@ label:not(.box-2 .auth label) {
 }
 
 .form .record-success li { 
-    background-image: linear-gradient( to bottom, var(--color-1), #111);
+    background-image: linear-gradient(to bottom left, var(--color-1), #111);
     border-radius: 1rem 1rem 0 0;
     color: #fff; 
     letter-spacing: .1rem;
