@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="appearance-result">
-                        <label for="apperance_result">Apperance Result</label><br>
+                        <label for="apperance_result">Appearance Result</label><br>
                         <select name="appearance_result">
                             <option value="C/M">C/M</option>
                             <option value="Clear">Clear</option>
