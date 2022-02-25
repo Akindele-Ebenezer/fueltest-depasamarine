@@ -15,6 +15,10 @@
     
     <style>
 
+    .depasa-logo {
+        top: 3rem;
+    }
+        
     .records-nav a:nth-child(2) {
         background: var(--color-1);
         color: #fff;
