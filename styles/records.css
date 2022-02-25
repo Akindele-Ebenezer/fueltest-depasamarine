@@ -94,8 +94,13 @@ table tr td {
 
 table tr th:nth-child(odd),
 table tr td:nth-child(odd) {
-    background: #eee;
-    box-shadow: 1px 2px 19px #ddd;
+    background: #eee; 
+}
+
+table tr th:first-child {
+    background: var(--color-1); 
+    color: #fff;
+    letter-spacing: .1rem;
 }
 
 @media(max-width: 1330px) {
