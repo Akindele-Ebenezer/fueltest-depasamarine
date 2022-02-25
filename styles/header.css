@@ -27,4 +27,10 @@ header {
     text-decoration: none;
 }
 
+@media (max-width: 1136px) {
+  .depasa-logo {
+    display: none;
+  }
+}
+
  
