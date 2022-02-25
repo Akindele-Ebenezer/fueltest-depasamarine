@@ -12,6 +12,16 @@
      
 ?>
 
+    
+    <style>
+
+    .records-nav a:nth-child(2) {
+        background: var(--color-1);
+        color: #fff;
+    }
+
+    </style>
+
     <form action="record-success.php" method="post">
         <div class="form">
             <div class="form-info-wrapper form-fuel-test">

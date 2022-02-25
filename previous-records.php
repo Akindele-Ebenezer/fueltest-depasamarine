@@ -32,11 +32,18 @@
 
     
 ?>
+
+    <style>
+
+        .records-nav a:first-child {
+            background: var(--color-1);
+            color: #fff;
+        }
+
+    </style>
+
     <div class="login-wrapper">  
-        <div class="records"> 
-                <div class="records-nav">
-                    <a href="previous-records.php">VIEW PREVIOUS RECORDS</a><a href="fuel-test.php">CREATE NEW RECORD</a><a href="records.php">VIEW ALL RECORDS</a><a href="logout.php">LOG OUT</a>
-                </div>
+        <div class="records">  
             <form action="" method="post" class="table">
                 <button type="submit" name="export" id="export">Export to Excel</button>
                 <div class="all-records">

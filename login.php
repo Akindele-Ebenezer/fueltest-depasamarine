@@ -37,6 +37,14 @@
 
 ?>
 
+    <style>
+
+    .records-nav {
+        display: none;
+    }
+
+    </style>
+    
     <form action="" class="login-wrapper" method="post">  
             <div style="background: url(images/fuel.jpg); 
                 background-position: center;

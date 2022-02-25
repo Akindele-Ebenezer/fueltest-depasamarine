@@ -1,13 +1,16 @@
 
-.header {
+header {
   background: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
+  color: antiquewhite;
   letter-spacing: .09rem;
   position: fixed;
   width: 100%;
   z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header div {

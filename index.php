@@ -31,6 +31,15 @@
 
 ?>
     
+    
+    <style>
+
+        .records-nav {
+            display: none;
+        }
+        
+    </style>
+
         <div class="login-wrapper" id="sign-up">
             <div style="background: url(images/fuel.jpg); 
                 background-position: center;
