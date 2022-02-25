@@ -25,11 +25,11 @@
 .align-self {
     align-self: center;
 } 
-
+ 
 body {
     overflow: hidden;
 }
-
+ 
 .form .appearance-result {
     width: 21rem;
 }
@@ -86,8 +86,7 @@ form button:hover {
 }
 
 .form .input-container {
-    font-size: larger;
-    margin-inline: 12rem;
+    font-size: larger; 
     overflow-y: scroll;
     width: 100rem;
 }
@@ -226,8 +225,9 @@ a:hover {
 
 @media (min-width: 1088px) {
     .form .save-changes {
-        margin-inline: 12rem;
-    }
+        margin-left: 12rem;
+        padding-right: 10rem;
+      }
     
     .form-fuel-test {
         width: 30rem;
