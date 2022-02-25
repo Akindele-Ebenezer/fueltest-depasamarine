@@ -39,9 +39,13 @@
 
     <style>
 
-    .records-nav {
-        display: none;
-    }
+        .depasa-logo {
+            top: 2.6rem;
+        }
+        
+       .records-nav {
+           display: none;
+       }
 
     </style>
     
