@@ -45,7 +45,7 @@
 
     </style>
     
-    <form action="" class="login-wrapper" method="post">  
+    <form action="" class="login-wrapper login" method="post">  
             <div style="background: url(images/fuel.jpg); 
                 background-position: center;
                 background-repeat: no-repeat;
