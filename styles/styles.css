@@ -26,6 +26,10 @@
     align-self: center;
 } 
 
+body {
+    overflow: hidden;
+}
+
 .form .appearance-result {
     width: 21rem;
 }
@@ -36,7 +40,7 @@ form {
     font-size: 1.1rem; 
     justify-content: center; 
     overflow: hidden;
-    transform: translateY(2rem);
+    transform: translateY(3rem);
 }
 
 .form { 
