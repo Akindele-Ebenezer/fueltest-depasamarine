@@ -34,5 +34,10 @@
 
   <div class="records-nav">
       <a href="previous-records.php">VIEW PREVIOUS RECORDS</a><a href="fuel-test.php">CREATE NEW RECORD</a><a href="records.php">VIEW ALL RECORDS</a><a href="logout.php">LOG OUT</a>
+
   </div>
+  
 </header>
+<div class="depasa-logo"> 
+  <a href=""><img src="images/depasa-logo.png" class="depasa" alt=""></a>
+</div> 
