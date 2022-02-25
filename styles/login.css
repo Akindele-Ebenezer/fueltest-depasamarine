@@ -3,6 +3,10 @@
   }
 .auth span {
     color: red;;
+} 
+
+.login {
+    transform: translate(0);
 }
 
 .login-wrapper .box-2 {
