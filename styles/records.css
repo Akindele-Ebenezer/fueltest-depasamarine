@@ -104,6 +104,12 @@ table tr td:nth-child(odd) {
     }
 }
 
+@media (max-width: 864px) {
+    .records-nav {
+        display: none;
+    }
+}
+
 @media (max-width: 820px) {
     .header-record-info {
         display: none;
