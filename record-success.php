@@ -71,6 +71,14 @@
 
 ?>
      
+    <style>
+        
+        .depasa-logo {
+            top: 3rem;
+        }
+
+    </style>
+
     <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
         <div class="form">
             <div class="form-info-wrapper form-fuel-test">
