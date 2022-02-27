@@ -1,9 +1,9 @@
 <?php
 
-  include 'config.php';
+  session_start();
+  
+  include 'conn-admin.php';
   error_reporting(0);
-  global $header_info;
-  $sample_no = $_SESSION['sample_no'];
   
 ?>
 
@@ -31,13 +31,13 @@
 
 <header>
   <div class="header"> 
-    <div><a href="fuel-test.php">FUEL TEST</a></div>
+    <div><a href="admin.php">FUEL TEST</a></div>
     <div class="header-record-info"><?= $header_info; ?></div>
-      <div><a href="fuel-test.php">DEPASA</a></div>
+      <div><a href="admin.php">DEPASA</a></div>
   </div> 
 
   <div class="records-nav">
-      <a href="previous-records.php">VIEW PREVIOUS RECORDS</a><a href="fuel-test.php">CREATE NEW RECORD</a><a href="records.php">VIEW ALL RECORDS</a><a href="logout.php">LOG OUT</a>
+      <a href="records.php">VIEW ALL RECORDS</a><a href="admin.php">CREATE NEW USER</a><a href="records.php">VIEW ALL RECORDS</a><a href="logout.php">LOG OUT</a>
 
   </div>
   

@@ -10,8 +10,10 @@
     $sql = "SELECT * FROM fuel_test_users WHERE id = '$id';";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
-
+     
+    
     if(isset($_POST['create_record'])) {
+        
         $_uid = mysqli_real_escape_string($conn, $_POST['uid']);
         $create_record = mysqli_real_escape_string($conn,  $_POST['create_record']);
         $sample_no = mysqli_real_escape_string($conn,  $_POST['sample_no']);

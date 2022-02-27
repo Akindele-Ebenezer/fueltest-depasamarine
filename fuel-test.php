@@ -2,7 +2,6 @@
 
     include 'auth.php'; 
     $title = 'FUEL TEST | Depasamarine';
-    include 'header.php';
 
     $id = $_SESSION['id'];
 
@@ -10,6 +9,16 @@
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
      
+    
+    $header_info = "<h3>ID : [$id] Email : " . $result[0]['email'] . "</h3>";
+    include 'header.php';
+     
+    $sql_sample_no = "SELECT * FROM fuel_test_records WHERE uid = '$id'  GROUP BY sample_no ORDER BY sample_collection_date DESC;";
+    $query_sample_no = mysqli_query($conn, $sql_sample_no);
+    $result_sample_no = mysqli_fetch_all($query_sample_no, MYSQLI_ASSOC); 
+ 
+    $total_records = count($result_sample_no);
+
 ?>
 
     
@@ -43,6 +52,12 @@
                     <div class="contact"> 
                         <div class="record-button"><a href="logout.php">LOG OUT</a></div>
                     </div> 
+
+                    <?= $result[0]['email'] == "tobi.akindele@gmail.com" ? " 
+                    <div class=\"contact\"> 
+                        <div class=\"record-button\"><a href=\"admin/index.php\">ADMIN</a></div>
+                    </div> " : ""; ?>
+
                     <div>
                         <p><?php $user_name = print_r($result[0]['name']); ?></p>
                         <p><?php $email = print_r($result[0]['email']); ?></p>
@@ -54,7 +69,7 @@
                 <div class="input-wrapper">
                     <div>
                         <label for="sample_number">Sample No.</label><br>
-                        <input type="text" name="sample_no" value="<?= rand(); ?>">
+                        <input type="text" name="sample_no" value="<?= $total_records + 1 . " - " . strtoupper($result[0]['email'][0]) . $total_records + 3; ?>">
                     </div>
 
                     <div>

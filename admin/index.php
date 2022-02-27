@@ -1,38 +1,33 @@
 <?php 
  
-    $header_info = "<a href='index.php'>Manage all your Records effectively. Log In</a>";
-    $title = 'FUEL TEST | Log In';
+    $header_info = "<a href='index.php'>Manage all Users and Records effectively. Log In</a>";
+    $title = 'FUEL TEST | ADMIN - Log In';
     include 'header.php';
-
-    global $error_double;
-    global $error_email;
-    global $error_password;
-    global $email;
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $password = mysqli_real_escape_string($conn, $_POST['password_']);  
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $admin_password = mysqli_real_escape_string($conn_admin, $_POST['admin_password_']);  
+        $admin_email = mysqli_real_escape_string($conn_admin, $_POST['admin_email']);
  
-        $sql = "SELECT * FROM fuel_test_users WHERE email = '$email' AND password = '$password';";
-        $query = mysqli_query($conn, $sql);
-        $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
-        $id = $result[0]['id'];
+        $admin_sql = "SELECT * FROM admin_ WHERE email = '$admin_email' AND password = '$admin_password';";
+        $admin_query = mysqli_query($conn_admin, $admin_sql);
+        $admin_result = mysqli_fetch_all($admin_query, MYSQLI_ASSOC);
+        $id = $admin_result[0]['id'];
 
-        if (mysqli_num_rows($query) == 1) {
+        if (mysqli_num_rows($admin_query) == 1) {
 
             session_start();
-            $_SESSION['auth'] = "true";  
+            $_SESSION['auth_admin'] = "true";  
             $_SESSION['id'] = $id;
 
             
-            header("location: fuel-test.php");
+            header("location: admin.php");
 
         } 
 
-        if (empty($email)) {
+        if (empty($admin_email)) {
             $error_email = ' * Enter Email..';
-        } elseif (empty($password)) {
+        } elseif (empty($admin_password)) {
             $error_password = ' * Enter Password';
         } else {
             $error_double = ' * Wrong Email/Password';
@@ -54,7 +49,7 @@
 
     </style>
     
-    <form action="" class="login-wrapper login" method="post">  
+    <form action="<?= $_SERVER['PHP_SELF']; ?>" class="login-wrapper login" method="post">  
             <div style="background: url(images/fuel.jpg); 
                 background-position: center;
                 background-repeat: no-repeat;
@@ -65,15 +60,15 @@
                 <div class="auth">
                     <p>Create active records! <button><a href="index.php">Log In</a></button></p>
                     <br><span><?= $error_double; ?></span>
-                    <h1>Log In</h1> 
+                    <h1>Log In - ADMIN</h1> 
                     <br />  
                     <label for="email">Email</label> <span><?= $error_email; ?></span> <br />
-                    <input type="email" name="email" value="<?= $email; ?>" placeholder="example@depasamarine.com"/>
+                    <input type="email" name="admin_email" value="<?= $admin_email; ?>" placeholder="example@depasamarine.com"/>
                     <br />
                     <label for="password">Password</label> <span><?= $error_password; ?></span><br />
-                    <input type="password" name="password_" placeholder="8+ Characters.."/>
+                    <input type="password" name="admin_password_" placeholder="8+ Characters.."/>
                     <br />
-                    <button type="submit" name="login">Log In</button>                  
+                    <button type="submit" name="admin_login">Log In</button>                  
                     <br /> 
                 </div>
             </div>  

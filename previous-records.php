@@ -15,7 +15,9 @@
 
     $total_records = count($result); 
     $header_info = "<h3>Current User : <br>  $full_name </h3> <h3>Status : <br>  Online </h3> <h3>Total Records : <br>  " . count($result) . "</h3> <h3>No. of Users : <br>  " . count($result3) . " </h3>";
-    $title = 'Fuel Test | All Records'; 
+    $title = 'Fuel Test | Previous Records'; 
+
+    $_SESSION['sample_no'] = $total_records;
 
     include 'header.php';
      

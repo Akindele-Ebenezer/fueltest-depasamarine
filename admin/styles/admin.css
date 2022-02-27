@@ -1,0 +1,43 @@
+.admin {
+    justify-content: flex-start;
+}
+
+.admin-dashboard {
+    background-image: linear-gradient( to bottom, var(--color-1), #111);
+    height: 100vh;
+    padding: 1rem;
+}
+
+#admin-dashboard-inner {
+    color: antiquewhite;
+    margin-top: 7rem;
+    width: 20rem;
+}
+
+#admin-dashboard-inner .record-button { 
+    border-left: 10px solid var(--color-1);
+    font-weight: bold;
+    letter-spacing: .09rem;
+    margin-block: .5rem;
+    padding: .5rem; 
+}
+
+#admin-dashboard-inner .record-button a, 
+#admin-dashboard-inner p {
+    color: antiquewhite;
+    display: block;
+    font-size: smaller;
+    text-align: left;
+}
+
+.admin form {
+    transform: translate(0);
+}
+
+.admin form .auth input,
+.admin form .auth button {
+    width: 65vw;
+}
+.admin .form-body-wrapper {
+    margin-top: 2rem;
+}

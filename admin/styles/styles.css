@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-2: cadetblue;
+}
+
+.alert {
+    background: lightgreen;
+    border-radius: .50rem;
+    font-style: italic;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    padding: .5rem;
+    position: absolute;
+    text-align: center;
+    top: 5rem;
+    width: 95vw;
+}
+
+.align-self {
+    align-self: center;
+} 
+ 
+body {
+    overflow: hidden;
+}
+ 
+.form .appearance-result {
+    width: 21rem;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    font-size: 1.1rem; 
+    justify-content: center; 
+    overflow: hidden;
+    transform: translateY(3rem);
+}
+
+.form { 
+    border-radius: 2rem; 
+    display: flex;
+    height: 100vh;
+    justify-content: space-between; 
+    width: 100vw;
+}
+
+form button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-info-wrapper {
+    background: var(--color-1);
+    color: #fff;
+}
+ 
+.form-info-wrapper div {
+    margin-block: 1rem;
+}
+
+.form > div { 
+    padding: 1rem;
+}
+
+.form div h1 {
+    /* font-family: 'Rowdies', cursive; */
+    font-size: 3.5rem;
+    margin-block: 1.5rem;
+}
+
+.form-fuel-test {
+    background-image: linear-gradient( to bottom, var(--color-1), #111);
+    color: antiquewhite;
+}
+
+.form-fuel-test h1 {
+    border-bottom: 7px solid var(--color-1);
+    border-top: 3px solid var(--color-1);
+}
+
+.form .input-container {
+    font-size: larger; 
+    overflow-y: scroll;
+    width: 100rem;
+}
+
+.form .fuel-test {
+    margin-inline: 0;
+}
+
+.form .input-container .input-wrapper select {
+    border: 3px solid #a8caa8;
+    border-radius: .5rem;
+    margin-top: 1.5rem; 
+    width: 21rem;
+}
+
+form .input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .input-wrapper div {
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 1px 2px 19px #ddd;
+    margin: 1rem 1.5rem;
+}
+
+.form button {
+    background: var(--color-1);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.form button,
+.form div h1 {
+    margin: 2.5rem 1rem;
+}
+
+input,
+.form button {
+    border: 1px solid green;
+    font-size: large;
+    outline: none;
+    padding: 1rem;
+    width: 21rem;
+}
+
+input[placeholder] {
+    color: var(--color-1);   
+}
+
+.form button { 
+    width: 45%;
+}
+
+input:focus {
+    border-bottom: solid var(--color-1);
+}
+
+.input-container h1 {
+    border-bottom: 1px solid var(--color-1);
+}
+
+label:not(.box-2 .auth label) {
+    background-image: linear-gradient( to bottom left, #014d29, #222);
+    border-radius: 1rem 1rem 0 0;
+    color: antiquewhite;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .1rem; 
+    padding: 1rem;
+}
+ 
+.form .record-button { 
+    border-left: 10px solid var(--color-1);
+    font-weight: bold;
+    letter-spacing: .09rem;
+    padding: .5rem; 
+}
+
+.form .record-button a {
+    color: antiquewhite;
+    display: block;
+    text-decoration: none;
+}
+
+.form .record-success h1 {
+    margin-bottom: 2rem;
+}
+
+.form .record-success p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.form .record-success li { 
+    background-image: linear-gradient(to bottom left, var(--color-1), #111);
+    border-radius: 1rem 1rem 0 0;
+    color: antiquewhite; 
+    letter-spacing: .1rem;
+    list-style: circle;
+    list-style-position: inside;
+    margin-block: 1.5rem;
+    padding: 1rem;
+}
+
+.form .record-success li span { 
+    font-weight: bold;
+} 
+
+.form .record-success ul {
+    box-shadow: 1px 2px 19px #ddd;
+    border-radius: 1rem 1rem 0 0;   
+}
+
+#sign-up {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: green;
+}
+
+a:hover {
+    border-bottom: 1px solid wheat;
+    font-weight: bold;
+} 
+
+@media (max-width: 1444px) {
+    .form .input-container {
+        margin-inline: 0rem;
+    }
+}
+
+@media (min-width: 1088px) {
+    .form .save-changes {
+        margin-left: 12rem;
+        padding-right: 10rem;
+      }
+    
+    .form-fuel-test {
+        width: 30rem;
+    }
+     
+    .form .input-container .input-wrapper select,
+    input {
+        width: 100%;
+    }
+    
+    form .input-wrapper {
+        justify-content: center;
+    }
+    
+    form .input-wrapper div,
+    .form .appearance-result {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1350px) {
+    
+    .form .input-container .input-wrapper .appearance-result {
+        width: 95%;   
+    }
+    
+    .form .input-container .input-wrapper .appearance-result select {
+        width: 100%;
+    }
+     
+    form .input-wrapper div,
+    .form button {
+        width: 95%
+    }
+    
+    input {
+        width: 100%;
+    }
+    
+    
+    input[type="button"] {
+        width: 50%;
+    }
+    
+}
+
+@media (max-width: 658px) {
+    .form .appearance-result {
+        width: 90vw;
+    }
+
+    .form-info-wrapper {
+        display: none;
+    }
+}
+

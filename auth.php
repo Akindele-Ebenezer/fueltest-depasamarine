@@ -10,7 +10,7 @@
     $id = $_SESSION['id'];  
     
     if(!isset($_SESSION['auth'])){
-        header("location: login.php");
+        header("location: index.php");
         exit;
     }
 
@@ -22,8 +22,6 @@
     $sql3 = "SELECT DISTINCT name FROM fuel_test_users;";
     $query3 = mysqli_query($conn, $sql3);
     $result3 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
-
-    
     
 
 ?>
