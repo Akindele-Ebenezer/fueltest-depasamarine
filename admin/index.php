@@ -43,9 +43,28 @@
             top: 2.6rem;
         }
         
+        .login-wrapper h2 { 
+            color: var(--color-1);
+        }
+
        .records-nav {
            display: none;
        }
+
+       .toggle-icon {
+           display: none;
+       }
+
+       @media (min-width: 900px) {
+            .login-wrapper h2 {
+                display: none;
+            } 
+        }
+
+        @media (max-width: 658px) {
+            .depasa-logo {
+                top: 4.5rem;
+        }
 
     </style>
     
@@ -58,6 +77,7 @@
             </div>
             <div class="box box-2">
                 <div class="auth">
+                    <h2>Manage all Users and Records effectively.</h2>
                     <p>Create active records! <button><a href="index.php">Log In</a></button></p>
                     <br><span><?= $error_double; ?></span>
                     <h1>Log In - ADMIN</h1> 

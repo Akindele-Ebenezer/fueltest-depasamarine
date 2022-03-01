@@ -42,6 +42,11 @@
             color: #fff;
         }
 
+        @media (max-width: 864px) { 
+        .toggle-icon {
+            display: block;
+        }
+    }
     </style>
 
     <div class="login-wrapper">  

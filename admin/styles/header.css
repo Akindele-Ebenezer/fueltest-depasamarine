@@ -1,5 +1,5 @@
 .depasa-logo {
-  position: absolute;
+  position: absolute; 
   top: 4rem;
   z-index: 1;
 }
@@ -27,10 +27,25 @@ header {
     text-decoration: none;
 }
 
-@media (max-width: 1136px) {
-  .depasa-logo {
+.header .toggle-icon img {
+  background: antiquewhite;
+  border-radius: .5rem;
+  cursor: pointer;
+  width: 3rem;
+}
+
+
+
+@media (min-width: 742px) { 
+  .toggle-icon {
     display: none;
   }
 }
 
- 
+@media (max-width: 742px) { 
+  .toggle-icon {
+    display: block;
+  }
+}
+
+

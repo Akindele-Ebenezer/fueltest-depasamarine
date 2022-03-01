@@ -31,7 +31,7 @@
     background: #fff;
     display: flex;
     font-size: smaller;
-    justify-content: center;
+    justify-content: flex-end;
     letter-spacing: .1rem; 
 }
 
@@ -105,10 +105,21 @@ table tr th:first-child {
     letter-spacing: .1rem;
 }
 
+.users {
+    width: 90vw;
+}
+
 @media(max-width: 1330px) {
     .header-record-info h3 {
         margin-inline: 1rem;
     }
+}
+
+@media (max-width: 1064px) {
+    .records-nav a { 
+        margin-inline: 0;
+        padding: .5rem;
+      }
 }
 
 @media (max-width: 864px) {

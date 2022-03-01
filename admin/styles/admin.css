@@ -2,6 +2,10 @@
     justify-content: flex-start;
 }
 
+.admin .box-2 {
+    width: 100vw;
+}
+
 .admin-dashboard {
     background-image: linear-gradient( to bottom, var(--color-1), #111);
     height: 100vh;
@@ -32,12 +36,25 @@
 
 .admin form {
     transform: translate(0);
+    width: 100%;
 }
 
 .admin form .auth input,
 .admin form .auth button {
-    width: 65vw;
+    width: 100%;
 }
 .admin .form-body-wrapper {
     margin-top: 2rem;
+}
+
+.auth {
+    width: 100%;
+}
+
+@media (max-width: 742px) {
+    
+    .admin-dashboard {
+        display: none;
+    }
+
 }

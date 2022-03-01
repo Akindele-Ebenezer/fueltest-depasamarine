@@ -103,9 +103,26 @@ table tr th:first-child {
     letter-spacing: .1rem;
 }
 
+@media (max-width: 1470px) {
+    .records-nav {
+        justify-content: flex-end;
+    }
+
+    .records-nav a {
+        margin-inline: 0;
+        padding: .5rem;
+    }
+}
+
 @media(max-width: 1330px) {
     .header-record-info h3 {
         margin-inline: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-record-info {
+        display: none;
     }
 }
 
@@ -115,8 +132,3 @@ table tr th:first-child {
     }
 }
 
-@media (max-width: 820px) {
-    .header-record-info {
-        display: none;
-    }
-}

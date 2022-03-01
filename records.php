@@ -33,12 +33,17 @@
 
 
     <style>
+ 
+        .records-nav a:nth-child(3) {
+            background: var(--color-1);
+            color: #fff;
+        }
 
-    .records-nav a:nth-child(3) {
-        background: var(--color-1);
-        color: #fff;
-    }
-
+        @media (max-width: 864px) { 
+            .toggle-icon {
+                display: block;
+            }
+        }
     </style>
 
     <div class="login-wrapper">  

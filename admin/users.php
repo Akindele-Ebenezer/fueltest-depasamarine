@@ -1,6 +1,7 @@
 <?php
 
 $title = "FUEL TEST | Users";
+
     include 'header.php';
 
 
@@ -26,6 +27,12 @@ $title = "FUEL TEST | Users";
         color: #fff;
     }
 
+    @media (max-width: 864px) {
+        .header .toggle-icon {
+            display: block;
+        }
+    }
+
 </style>
 
 
@@ -34,7 +41,7 @@ $title = "FUEL TEST | Users";
             <form action="" method="post" class="table">
                 <button type="submit" name="export" id="export">Export to Excel</button>
                 <div class="all-records">
-                    <table>
+                    <table class="users">
                         <tr>
                             <th> Name</th>
                             <th> Email </th>

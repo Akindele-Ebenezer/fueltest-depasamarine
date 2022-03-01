@@ -1,6 +1,6 @@
 <?php
     $header_info = "<a href='admin.php'>Create Users for Fuel Test Lab</a>";
-    $title = 'FUEL TEST | Admin';
+    $title = 'FUEL TEST | ADMIN - Remove User';
     include 'header.php';
     include 'admin-auth.php';
 
@@ -10,26 +10,20 @@
     $sql_query = mysqli_query($conn_admin, $sql_admin);
     $result_admin = mysqli_fetch_all($sql_query, MYSQLI_ASSOC);
 
-    $create_user_name = mysqli_real_escape_string($conn_admin, $_POST['create_user_name']);
-    $create_user_email = mysqli_real_escape_string($conn_admin, $_POST['create_user_email']);
-    $create_user_password = mysqli_real_escape_string($conn_admin, $_POST['create_user_password']);
+    $remove_user_id = mysqli_real_escape_string($conn_admin, $_POST['remove_user_id']); 
 
-    if(isset($_POST['create_user'])) {
+    if(isset($_POST['remove_user'])) {
 
-    $sql = "INSERT INTO fuel_test_users (name, email, password) VALUES ('$create_user_name', '$create_user_email', '$create_user_password');";
+    $sql = "DELETE FROM fuel_test_users WHERE id = '$remove_user_id';";
     $query = mysqli_query($conn_admin, $sql);
 
 
-    if (empty($create_user_name)) {
-        $error_name = ' * Enter Full Name';
-    } elseif (empty($create_user_email)) {
-        $error_email = ' * Enter Email..';
-    } elseif (empty($create_user_password)) {
-        $error_password = ' * Enter Password';
+    if (empty($remove_user_id)) {
+        $error_name = ' * Enter User Id..';
     } else {
         echo "<div class='alert'>
                     <div>
-                        User with the name $create_user_name and email $create_user_email have been created successfully..
+                        User with the ID $remove_user_id : Removed..
                     </div>        
               </div>";
     }
@@ -45,15 +39,16 @@
             top: 2.6rem;
         }
          
-        .records-nav a:nth-child(2) {
+        .records-nav a:nth-child(4) {
             background: var(--color-1);
             color: #fff;
         }
-  
+
         @media (max-width: 658px) {
             .depasa-logo {
                 top: 4.5rem;
         }
+  }
     </style>
 
             <div class="login-wrapper admin"> 
@@ -90,18 +85,13 @@
             <div class="box box-2">
                 <form action="<?= $_SERVER['PHP_SELF']; ?>" method='post'>
                     <div class="auth">
-                        <h1>ADMIN - Create User</h1> 
+                        <h1>ADMIN - Remove User</h1> 
                         <br /> 
-                        <label for="name">Name</label> <span><?= $error_name; ?></span> <br />
-                        <input type="text" value="<?= $name; ?>" name="create_user_name" placeholder="Enter Name"/>
+                        <label for="id">User ID</label> <span><?= $error_user_id; ?></span> <br />
+                        <input type="text" name="remove_user_id" placeholder="Enter User ID.."/>
+                        <br /> 
                         <br />
-                        <label for="email">Email</label> <span><?= $error_email; ?></span> <br />
-                        <input type="email" value="<?= $email; ?>" name="create_user_email" placeholder="example@depasamarine.com"/>
-                        <br />
-                        <label for="password">Password</label> <span><?= $error_password; ?></span> <br />
-                        <input type="password" name="create_user_password" placeholder="8+ Characters.." />
-                        <br />
-                        <button type="submit" name='create_user'>Create User</button>                  
+                        <button type="submit" name='remove_user'>Remove User</button>                  
                         <br /> 
                     </div>
                 </div>
