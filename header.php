@@ -135,7 +135,7 @@
 
                     <div>
                         <p><?php $user_name = print_r($result[0]['name']); ?></p>
-                        <p><?php $email = print_r($result[0]['email']); ?></p>
+                        <p><?php print_r($result[0]['email']); ?></p>
                     </div>
                 </div>
             </div>
