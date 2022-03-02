@@ -47,7 +47,7 @@
         .depasa-logo {
             top: 2.6rem;
         }
-        
+     
         .login-wrapper h2 { 
             color: var(--color-1);
         }

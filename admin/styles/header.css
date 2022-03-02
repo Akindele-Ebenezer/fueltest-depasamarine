@@ -1,7 +1,7 @@
 .depasa-logo {
-  position: absolute; 
-  top: 4rem;
-  z-index: 1;
+  position: absolute;
+  right: -16px;
+  top: -9px;
 }
 
 header {
@@ -14,6 +14,7 @@ header {
 }
 
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -33,7 +34,6 @@ header {
   cursor: pointer;
   width: 3rem;
 }
-
 
 
 @media (min-width: 742px) { 

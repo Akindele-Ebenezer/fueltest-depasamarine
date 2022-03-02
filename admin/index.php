@@ -11,9 +11,9 @@
  
         $admin_sql = "SELECT * FROM admin_ WHERE email = '$admin_email' AND password = '$admin_password';";
         $admin_query = mysqli_query($conn_admin, $admin_sql);
-        $admin_result = mysqli_fetch_all($admin_query, MYSQLI_ASSOC);
+        $admin_result  = mysqli_fetch_all($admin_query, MYSQLI_ASSOC);
         $id = $admin_result[0]['id'];
-
+        
         if (mysqli_num_rows($admin_query) == 1) {
 
             session_start();
@@ -38,11 +38,7 @@
 ?>
 
     <style>
-
-        .depasa-logo {
-            top: 2.6rem;
-        }
-        
+ 
         .login-wrapper h2 { 
             color: var(--color-1);
         }
@@ -59,12 +55,7 @@
             .login-wrapper h2 {
                 display: none;
             } 
-        }
-
-        @media (max-width: 658px) {
-            .depasa-logo {
-                top: 4.5rem;
-        }
+        } 
 
     </style>
     

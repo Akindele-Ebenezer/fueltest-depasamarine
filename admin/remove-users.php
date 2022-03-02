@@ -34,21 +34,12 @@
     
     
     <style>
-
-        .depasa-logo {
-            top: 2.6rem;
-        }
-         
+ 
         .records-nav a:nth-child(4) {
             background: var(--color-1);
             color: #fff;
         }
-
-        @media (max-width: 658px) {
-            .depasa-logo {
-                top: 4.5rem;
-        }
-  }
+ 
     </style>
 
             <div class="login-wrapper admin"> 

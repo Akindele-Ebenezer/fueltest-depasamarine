@@ -76,6 +76,15 @@
             padding: .5rem;
         }
 
+        .records-nav {
+            background: #fff;
+            display: flex;
+            font-size: smaller;
+            justify-content: center;
+            letter-spacing: .1rem; 
+            position: relative; 
+        }
+
         .toggle {
             display: block;
         } 
@@ -84,6 +93,12 @@
             display: none;
         }
 
+
+        @media (max-width: 670px) {
+            .records-nav {
+                display: none;
+            }
+        }
         @media (min-width: 660px) {
             .nav-sm-screen {
                 display: none;
@@ -95,21 +110,26 @@
 <body>
 
 <header>
-  <div class="header"> 
-    <div><a href="admin.php">FUEL TEST</a></div>
-    <div class="header-record-info"><?= $header_info; ?></div>
-      <div><a href="admin.php">DEPASA</a></div>
-    <div class="toggle-icon"><img src="images/toggle-icon.png" alt=""></div>
+      <!--  -->
+  <div class="header">
+        <div><a href="#">FUEL TEST</a></div>
+        <div class="header-record-info"><?= $header_info; ?></div> 
+        <div class="depasa-logo"> 
+            <a href="#">
+                <img src="images/depasa-logo.png" class="" alt="">
+            </a>
+        </div>
+        <div class="toggle-icon">
+            <img src="images/toggle-icon.png" alt="">
+        </div>
   </div> 
+      <!--  -->
 
   <div class="records-nav">
       <a href="records.php">VIEW ALL RECORDS</a><a href="admin.php">CREATE NEW USER</a><a href="records.php">VIEW ALL RECORDS</a><a href="remove-users.php">REMOVE USERS</a><a href="logout.php">LOG OUT</a>
 
   </div>
-  
-  <div class="depasa-logo"> 
-    <a href=""><img src="images/depasa-logo.png" class="depasa" alt=""></a>
-  </div> 
+   
 </header>
    
             <div class="nav-sm-screen">
@@ -129,16 +149,6 @@
                     </div> 
                     <div class="contact"> 
                         <div class="record-button"><a href="logout.php">LOG OUT</a></div>
-                    </div> 
-
-                    <?= $result[0]['email'] == "tobi.akindele@gmail.com" ? " 
-                    <div class=\"contact\"> 
-                        <div class=\"record-button\"><a href=\"admin/index.php\">ADMIN</a></div>
-                    </div> " : ""; ?>
-
-                    <div>
-                        <p><?php $user_name = print_r($result[0]['name']); ?></p>
-                        <p><?php print_r($result[0]['email']); ?></p>
-                    </div>
+                    </div>  
                 </div>
             </div>

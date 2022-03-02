@@ -14,7 +14,7 @@
     $create_user_email = mysqli_real_escape_string($conn_admin, $_POST['create_user_email']);
     $create_user_password = mysqli_real_escape_string($conn_admin, $_POST['create_user_password']);
 
-    if(isset($_POST['create_user'])) {
+if(isset($_POST['create_user'])) {
 
     $sql = "INSERT INTO fuel_test_users (name, email, password) VALUES ('$create_user_name', '$create_user_email', '$create_user_password');";
     $query = mysqli_query($conn_admin, $sql);
@@ -39,21 +39,13 @@
 ?>
     
     
-    <style>
+    <style>  
 
-        .depasa-logo {
-            top: 2.6rem;
-        }
-         
         .records-nav a:nth-child(2) {
             background: var(--color-1);
             color: #fff;
         }
-  
-        @media (max-width: 658px) {
-            .depasa-logo {
-                top: 4.5rem;
-        }
+   
     </style>
 
             <div class="login-wrapper admin"> 

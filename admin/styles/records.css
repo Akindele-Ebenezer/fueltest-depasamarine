@@ -27,14 +27,6 @@
     width: 100vw;
 }
 
-.records-nav {
-    background: #fff;
-    display: flex;
-    font-size: smaller;
-    justify-content: flex-end;
-    letter-spacing: .1rem; 
-}
-
 .records-nav a { 
     color: var(--color-1);
     margin-inline: 1rem;
@@ -121,13 +113,7 @@ table tr th:first-child {
         padding: .5rem;
       }
 }
-
-@media (max-width: 864px) {
-    .records-nav {
-        display: none;
-    }
-}
-
+  
 @media (max-width: 820px) {
     .header-record-info {
         display: none;
