@@ -37,6 +37,15 @@ header {
   width: 1.7rem;
 }
 
+@media (min-width: 1048px) {
+  .depasa-logo {
+    transform: translateY(.22rem);
+  }
+
+  .header { 
+    padding: 2rem;
+  }
+}
 
 @media (min-width: 670px) { 
   .toggle-icon {
