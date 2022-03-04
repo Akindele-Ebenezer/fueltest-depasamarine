@@ -13,10 +13,11 @@
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
 
+    global $total_records;
     $total_records = count($result); 
     $header_info = "<h3>Current User : <br>  $full_name </h3> <h3>Status : <br>  Online </h3> <h3>Total Records : <br>  " . count($result) . "</h3> <h3>No. of Users : <br>  " . count($result3) . " </h3>";
     $title = 'Fuel Test | Previous Records'; 
-
+ 
     $_SESSION['sample_no'] = $total_records;
 
     include 'header.php';
@@ -70,11 +71,15 @@
                             <th> Date Of Test</th>
                             <th> Made By (Name)</th>
                         </tr>
-
-                        <?php foreach($result as $fuel_test_record) : ?>
-
+                        <?php   switch($total_records) {
+                                        case 0:
+                                        echo "<td>You have empty RECORDS..</td>";
+                                        break; 
+                                    } 
+                        ?>
+                        <?php foreach($result as $fuel_test_record) : ?> 
                         <tr>
-                            <td><?= $fuel_test_record['sample_no']; ?></td>
+                            <td><?= $fuel_test_record['sample_no']; ?></td>    
                             <td><?= $fuel_test_record['sample_collection_date']; ?></td>
                             <td><?= $fuel_test_record['truck_plate_no']; ?></td>
                             <td><?= $fuel_test_record['tank_no']; ?></td>
