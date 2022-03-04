@@ -1,7 +1,5 @@
 .depasa-logo {
-  position: absolute;
-  right: -16px;
-  top: -9px;
+  transform: translateY(1rem);
 }
 
 header {
@@ -16,7 +14,9 @@ header {
 .header {
   align-items: center;
   display: flex;
+  height: 2rem;
   justify-content: space-between;
+  
 }
 
 .header div {
@@ -32,17 +32,19 @@ header {
   background: antiquewhite;
   border-radius: .5rem;
   cursor: pointer;
-  width: 3rem;
+  margin-top: .4rem;
+  padding: .2rem;
+  width: 1.7rem;
 }
 
 
-@media (min-width: 742px) { 
+@media (min-width: 670px) { 
   .toggle-icon {
     display: none;
   }
 }
 
-@media (max-width: 742px) { 
+@media (max-width: 670px) { 
   .toggle-icon {
     display: block;
   }

@@ -49,6 +49,7 @@ button {
 }
 
 .login-wrapper .box { 
+    background: #fff;
     height: 100vh;
     padding-inline: 2rem; 
 }

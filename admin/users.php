@@ -3,6 +3,7 @@
 $title = "FUEL TEST | Users";
 
     include 'header.php';
+    include 'admin-auth.php';
 
 
     $sql_users = "SELECT * FROM fuel_test_users;";
@@ -26,12 +27,7 @@ $title = "FUEL TEST | Users";
         background: var(--color-1);
         color: #fff;
     }
-
-    @media (max-width: 864px) {
-        .header .toggle-icon {
-            display: block;
-        }
-    }
+ 
 
 </style>
 

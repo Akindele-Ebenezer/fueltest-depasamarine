@@ -37,12 +37,7 @@
 
 ?>
 
-    <style>
- 
-        .login-wrapper h2 { 
-            color: var(--color-1);
-        }
-
+    <style> 
        .records-nav {
            display: none;
        }
@@ -67,8 +62,7 @@
                 height: 100vh; width: 70vw;" class='login-wrapper-first box'> 
             </div>
             <div class="box box-2">
-                <div class="auth">
-                    <h2>Manage all Users and Records effectively.</h2>
+                <div class="auth"> 
                     <p>Create active records! <button><a href="index.php">Log In</a></button></p>
                     <br><span><?= $error_double; ?></span>
                     <h1>Log In - ADMIN</h1> 

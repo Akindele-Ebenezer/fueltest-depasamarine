@@ -23,7 +23,7 @@
      
     echo $_SESSION["user_name"]; 
 
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['export'])) {
  
         header("Content-Type: application/xls");    
         header("Content-Disposition: attachment; filename=DEPASA Fuel Test Records.xls");  

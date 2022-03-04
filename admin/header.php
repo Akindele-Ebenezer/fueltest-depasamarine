@@ -1,5 +1,5 @@
 <?php
-
+  ob_start();
   session_start();
   
   include 'conn-admin.php';
@@ -31,14 +31,12 @@
     <style>
 
         .nav-sm-screen {
-            background-image: linear-gradient( to bottom, var(--color-1), #111);
-            display: none; 
-            line-height: 2rem;
-            padding: 2.5rem;
-            position: absolute;
-            top: 4.3rem;
-            width: 100vw;
-            z-index: 1;
+            background-image: linear-gradient( to bottom, var(--color-1), #111); 
+            display: none;
+            line-height: 2rem; 
+            padding: 2.5rem; 
+            transition: 2s;
+            width: 100vw; 
         }
 
         .nav-sm-screen a {
@@ -85,7 +83,7 @@
             position: relative; 
         }
 
-        .toggle {
+        .toggle { 
             display: block;
         } 
 
@@ -99,7 +97,7 @@
                 display: none;
             }
         }
-        @media (min-width: 660px) {
+        @media (min-width: 670px) {
             .nav-sm-screen {
                 display: none;
             }
@@ -130,7 +128,6 @@
 
   </div>
    
-</header>
    
             <div class="nav-sm-screen">
                 <h1>DEPASA Marine Int'l</h1> 
@@ -152,3 +149,5 @@
                     </div>  
                 </div>
             </div>
+
+</header>

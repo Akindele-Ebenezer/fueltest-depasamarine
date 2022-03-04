@@ -21,3 +21,8 @@ toggleIcon.addEventListener('click', () => {
     depasaLogo.classList.toggle('toggleLogo');
 }); 
 
+const divsAfterStyleTags = document.querySelector('style + div');
+divsAfterStyleTags.addEventListener('click', () => {
+    navSmScreen.classList.remove('toggle');
+});
+
