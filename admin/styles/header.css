@@ -1,5 +1,6 @@
 .depasa-logo {
-  transform: translateY(1rem);
+  position: relative; 
+  transform: translateY(.7rem);
 }
 
 header {
@@ -37,13 +38,17 @@ header {
   width: 1.7rem;
 }
 
+
 @media (min-width: 1048px) {
   .depasa-logo {
-    transform: translateY(.22rem);
-  }
+    transform: translateY(.7rem);
+  } 
+}
 
-  .header { 
-    padding: 2rem;
+@media (min-width: 1204px) {
+  .depasa-logo {    
+    /* transform: translateY(1rem); */
+    z-index: 1;
   }
 }
 
