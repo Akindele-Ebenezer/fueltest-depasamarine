@@ -1,5 +1,5 @@
 <?php
 
-    $conn_admin = mysqli_connect('localhost', 'root', 'ebenkeyz1*', 'fuel_test_management_system');
+    $conn_admin = mysqli_connect('localhost', 'seyi', 'seyi', 'fuel_test_management_system');
 
 ?>
