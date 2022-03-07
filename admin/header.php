@@ -28,8 +28,7 @@
     <title><?= $title; ?></title>
 
     
-    <style>
-
+    <style> 
         .nav-sm-screen {
             background-image: linear-gradient( to bottom, var(--color-1), #111); 
             display: none;
@@ -76,12 +75,12 @@
 
         .records-nav {
             background: #fff;
-            display: flex;
-            font-size: smaller;
+            display: flex; 
             justify-content: center;
             letter-spacing: .1rem; 
             position: relative; 
         }
+
 
         .toggle { 
             display: block;

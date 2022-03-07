@@ -9,12 +9,11 @@
 .login {
     transform: translate(0);
 }
-
-.login-wrapper .box-2 {
-    align-items: center;
+/*  */
+.login-wrapper .box-2 { 
     display: flex;
 }
-
+/*  */
 .login-wrapper button {
     background: var(--color-1);
     border: none;
@@ -29,13 +28,11 @@
 
 .login-wrapper input[type],
 button { 
-    border-radius: .5rem;
-    font-size: 1.2rem;
+    border-radius: .5rem; 
 }
 
 .login-wrapper {  
-    display: flex;
-    font-size: 1.3rem;
+    display: flex; 
     justify-content: flex-start;
 }
  

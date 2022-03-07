@@ -37,8 +37,7 @@ body {
 
 form {
     align-items: center;
-    display: flex;
-    font-size: 1.1rem; 
+    display: flex; 
     justify-content: center; 
     overflow: hidden;
     transform: translateY(3rem);
@@ -72,11 +71,12 @@ form button:hover {
 
 .form div h1 {
     /* font-family: 'Rowdies', cursive; */
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-block: 1.5rem;
 }
 
 .form-fuel-test {
+    align-self: center;
     background-image: linear-gradient( to bottom, var(--color-1), #111);
     color: antiquewhite;
 }
@@ -86,8 +86,7 @@ form button:hover {
     border-top: 3px solid var(--color-1);
 }
 
-.form .input-container {
-    font-size: larger; 
+.form .input-container { 
     overflow-y: scroll;
     width: 100rem;
 }
@@ -127,8 +126,7 @@ form .input-wrapper div {
 
 input,
 .form button {
-    border: 1px solid green;
-    font-size: large;
+    border: 1px solid green; 
     outline: none;
     padding: 1rem;
     width: 21rem;
@@ -199,11 +197,7 @@ label:not(.box-2 .auth label) {
 .form .record-success ul {
     box-shadow: 1px 2px 19px #ddd;
     border-radius: 1rem 1rem 0 0;   
-}
-
-#sign-up {
-    font-size: 1rem;
-}
+} 
 
 a {
     text-decoration: none;

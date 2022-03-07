@@ -3,6 +3,7 @@
 }
 
 .admin .box-2 {
+    overflow: scroll;
     width: 100vw;
 }
 
@@ -29,8 +30,7 @@
 #admin-dashboard-inner .record-button a, 
 #admin-dashboard-inner p {
     color: antiquewhite;
-    display: block;
-    font-size: smaller;
+    display: block; 
     text-align: left;
 }
 

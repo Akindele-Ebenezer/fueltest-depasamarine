@@ -2,8 +2,11 @@
     align-self: center;
 }
 
-#export {
-    font-size: small;
+form .delete {
+    background: #ff3e3e;
+}
+
+#export {  
     padding: .5rem;
     position: absolute;
     right: 2rem;
@@ -34,8 +37,7 @@
 }
 
 .header-record-info {
-    display: flex;
-    font-size: small;
+    display: flex; 
 }
 
 .header-record-info h3 {
@@ -46,8 +48,7 @@
     background: #eee; 
     border-radius: 1rem;
     box-shadow: 1px 2px 19px #ccc; 
-    display: flex;
-    font-size: smaller;  
+    display: flex;  
     justify-content: space-evenly;
 }
 
@@ -77,25 +78,22 @@ table {
 } 
 
 table tr th,
-table tr td {
-    background: #ddd; 
+table tr td { 
     color: #222;
     padding: 1rem .5rem;
     text-align: center;
     width: 15rem;
 }
 
+table tr:nth-child(odd) {
+    background: #ddd; 
+}  
 
-table tr th:nth-child(odd),
-table tr td:nth-child(odd) {
-    background: #eee; 
-}
-
-table tr th:first-child {
-    background: var(--color-1); 
+table tr th {
+    background: #444;
     color: #fff;
-    letter-spacing: .1rem;
-}
+    letter-spacing: 0.1rem;
+} 
 
 .users {
     width: 90vw;

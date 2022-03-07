@@ -31,6 +31,10 @@
     
     <style>
 
+        * {
+            font-size: 97%;            
+        }
+
         .nav-sm-screen {
             background-image: linear-gradient( to bottom, var(--color-1), #111); 
             display: none; 
@@ -77,6 +81,10 @@
             padding: .5rem;
         }
 
+        table tr:nth-child(odd) {
+            background: #eee; 
+        }
+        
         .toggle {
             display: block;
         } 

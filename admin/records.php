@@ -6,8 +6,7 @@
 
     .records-nav {
             background: #fff;
-            display: flex;
-            font-size: smaller;
+            display: flex; 
             justify-content: center;
             letter-spacing: .1rem; 
             position: relative; 

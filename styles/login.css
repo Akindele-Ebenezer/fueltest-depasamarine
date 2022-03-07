@@ -29,13 +29,11 @@
 
 .login-wrapper input[type],
 button { 
-    border-radius: .5rem;
-    font-size: 1.2rem;
+    border-radius: .5rem; 
 }
 
 .login-wrapper {  
-    display: flex;
-    font-size: 1.3rem;
+    display: flex; 
     justify-content: flex-start;
 }
  

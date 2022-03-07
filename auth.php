@@ -23,5 +23,3 @@
     $query3 = mysqli_query($conn, $sql3);
     $result3 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
     
-
-?>
