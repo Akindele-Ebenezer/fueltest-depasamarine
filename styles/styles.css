@@ -82,9 +82,9 @@ form button:hover {
     height: 100vh;
 }
 
-.form-fuel-test h1 {
-    border-bottom: 7px solid var(--color-1);
-    border-top: 3px solid var(--color-1);
+.form-fuel-test h1:first-of-type {
+    transform: scale(1.2);
+    text-align: center;
 }
 
 .form .input-container { 

@@ -78,9 +78,9 @@ form button:hover {
     color: antiquewhite;
 }
 
-.form-fuel-test h1 {
-    border-bottom: 7px solid var(--color-1);
-    border-top: 3px solid var(--color-1);
+.admin h1 {
+    text-align: center;
+    transform: scale(1.2);
 }
 
 .form .input-container { 

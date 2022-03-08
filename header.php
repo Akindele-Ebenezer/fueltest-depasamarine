@@ -112,10 +112,7 @@
 
   </div>
   
-</header>
-<div class="depasa-logo"> 
-  <a href=""><img src="images/depasa-logo.png" class="depasa" alt=""></a>
-</div> 
+</header> 
 
             <div class="nav-sm-screen">
                 <h1>DEPASA Marine Int'l</h1> 

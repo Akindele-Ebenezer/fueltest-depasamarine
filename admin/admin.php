@@ -53,7 +53,7 @@ if(isset($_POST['create_user'])) {
                 <div class="admin-dashboard">
                     <div id="admin-dashboard-inner">
                         
-                        <h1>DEPASA Marine Int'l</h1>
+                        <h1><img src="images/depasa-logo.png"></h1> 
                     
                         <div class="form-body-wrapper">
                             <div class="contact"> 

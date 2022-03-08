@@ -22,23 +22,19 @@
 ?>
 
     
-    <style>
-
-    .depasa-logo {
-        top: 3rem;
-    }
+    <style> 
         
-    .records-nav a:nth-child(2) {
-        background: var(--color-1);
-        color: #fff;
-    }
+        .records-nav a:nth-child(2) {
+            background: var(--color-1);
+            color: #fff;
+        }
 
     </style>
 
     <form action="record-success.php" method="post">
         <div class="form">
             <div class="form-info-wrapper form-fuel-test">
-                <h1>DEPASA Marine Int'l</h1> 
+                <h1><img src="images/depasa-logo.png"></h1> 
                 <div class="form-body-wrapper">
                     <div class="contact"> 
                         <div class="record-button"><a href="previous-records.php">VIEW PREVIOUS RECORDS</a></div>
