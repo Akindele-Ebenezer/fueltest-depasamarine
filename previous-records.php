@@ -15,7 +15,7 @@
 
     global $total_records;
     $total_records = count($result); 
-    $header_info = "<h3>Current User : <br>  $full_name </h3> <h3>Status : <br>  Online </h3> <h3>Total Records : <br>  " . count($result) . "</h3> <h3>No. of Users : <br>  " . count($result3) . " </h3>";
+    $header_info = "<p>Current User : <br>  $full_name </p> <p>Status : <br>  Online </p> <p>Total Records : <br>  " . count($result) . "</p> <p>No. of Users : <br>  " . count($result3) . " </p>";
     $title = 'Fuel Test | Previous Records'; 
  
     $_SESSION['sample_no'] = $total_records;
@@ -99,6 +99,7 @@
                     </table>
                 </div>
             </form>
+        </div>
     </div>
 
 <?php

@@ -99,8 +99,8 @@
                         <div class="record-button"><a href="logout.php">LOG OUT</a></div>
                     </div> 
                     <div>
-                        <p><?php $user_name = print_r($result[0]['name']); echo $user_name; ?></p>
-                        <p><?php $email = print_r($result[0]['email']); echo $email; ?></p>
+                        <p><?php print_r($result[0]['name']); echo $user_name; ?></p>
+                        <p><?php print_r($result[0]['email']); echo $email; ?></p>
                     </div>
                 </div>
             </div>
@@ -109,21 +109,48 @@
                     <h1> <?= $full_name; ?></h1>
                     <p>Your RECORD with the SAMPLE NO. <?= $sample_no; ?> has been created Successfully. <br> You can edit this RECORD if there's any other changes, then click SAVE RECORD Button below to save changes. <br><br> <a href="fuel-test.php" class="link">Go here to Insert New Record.</a></p>
                      
-
                     <ul>
-                        <li> <span>Sample Collection Date :</span> </li><input type="date" name="edit_sample_collection_date" value="<?= $sample_collection_date; ?>" class="edit-input">
-                        <li> <span>Truck Plate No :</span></li> <input type="text" name="edit_truck_plate_no" value="<?= $truck_plate_no; ?>" class="edit-input"> 
-                        <li> <span>Tank No :</span></li> <input type="text" name="edit_tank_no" value="<?= $tank_no; ?>" class="edit-input">  
-                        <li> <span>Apperance Result :</span>  </li><input type="text" name="edit_appearance_result" value="<?= $appearance_result; ?>" class="edit-input">
-                        <li> <span>Color :</span></li> <input type="text" name="edit_color" value="<?= $color; ?>" class="edit-input"> 
-                        <li> <span>Density at 27° C in Kg/l :</span></li> <input type="text" name="edit_density" value="<?= $density; ?>" class="edit-input"> 
-                        <li> <span>Flash Point :</span></li> <input type="text" name="edit_flash_point" value="<?= $flash_point; ?>" class="edit-input"> 
-                        <li> <span>Temp :</span></li> <input type="text" name="edit_temp" value="<?= $temp; ?>" class="edit-input"> 
-                        <li> <span>Water ASTM D2709-16 :</span></li> <input type="text" name="edit_water" value="<?= $water; ?>" class="edit-input"> 
-                        <li> <span>Cleanliness :</span> </li><input type="text" name="edit_cleanliness" value="<?= $cleanliness; ?>" class="edit-input"> 
-                        <li> <span>Date Of Test :</span> </li> <input type="date" name="edit_date_of_test" value="<?= $date_of_test; ?>" class="edit-input">
-                        <li> <span>Full Name :</span> </li><input type="text" name="edit_full_name" value="<?= $full_name; ?>" class="edit-input"> 
-                        <li> <span>Sample No :</span></li> <input type="text" name="edit_sample_no" value="<?= $sample_no; ?>" class="edit-input"> 
+                        <div class="input-wrapper">
+                            <div> 
+                                <li> <span>Sample Collection Date :</span> </li><input type="date" name="edit_sample_collection_date" value="<?= $sample_collection_date; ?>" class="edit-input">
+                            </div>
+                            <div>
+                                <li> <span>Truck Plate No :</span></li> <input type="text" name="edit_truck_plate_no" value="<?= $truck_plate_no; ?>" class="edit-input">
+                            </div> 
+                            <div>
+                                <li> <span>Tank No :</span></li> <input type="text" name="edit_tank_no" value="<?= $tank_no; ?>" class="edit-input">
+                            </div> 
+                            <div> 
+                                <li> <span>Apperance Result :</span>  </li><input type="text" name="edit_appearance_result" value="<?= $appearance_result; ?>" class="edit-input">
+                            </div>
+                            <div>
+                                <li> <span>Color :</span></li> <input type="text" name="edit_color" value="<?= $color; ?>" class="edit-input">
+                            </div> 
+                            <div>
+                                <li> <span>Density at 27° C in Kg/l :</span></li> <input type="text" name="edit_density" value="<?= $density; ?>" class="edit-input">
+                            </div> 
+                            <div>
+                                <li> <span>Flash Point :</span></li> <input type="text" name="edit_flash_point" value="<?= $flash_point; ?>" class="edit-input">
+                            </div> 
+                            <div>
+                                <li> <span>Temp :</span></li> <input type="text" name="edit_temp" value="<?= $temp; ?>" class="edit-input">
+                            </div>
+                            <div> 
+                                <li> <span>Water ASTM D2709-16 :</span></li> <input type="text" name="edit_water" value="<?= $water; ?>" class="edit-input">
+                            </div>
+                            <div> 
+                                <li> <span>Cleanliness :</span> </li><input type="text" name="edit_cleanliness" value="<?= $cleanliness; ?>" class="edit-input">
+                            </div>
+                            <div> 
+                                <li> <span>Date Of Test :</span> </li> <input type="date" name="edit_date_of_test" value="<?= $date_of_test; ?>" class="edit-input">
+                            </div>
+                            <div>
+                                <li> <span>Full Name :</span> </li><input type="text" name="edit_full_name" value="<?= $full_name; ?>" class="edit-input">
+                            </div>
+                            <div> 
+                                <li> <span>Sample No :</span></li> <input type="text" name="edit_sample_no" value="<?= $sample_no; ?>" class="edit-input">
+                            </div> 
+                        </div>
                     </ul>
                     <br>
                     <button type="submit" name="save_changes">SAVE CHANGES</button>

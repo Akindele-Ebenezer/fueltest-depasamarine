@@ -11,6 +11,7 @@
 }
 /*  */
 .login-wrapper .box-2 { 
+    align-items: center;
     display: flex;
 }
 /*  */
@@ -45,8 +46,7 @@ button {
     width: fit-content;
 }
 
-.login-wrapper .box { 
-    align-items: center;
+.login-wrapper .box {  
     background: #fff;
     height: 100vh;
     padding-inline: 2rem; 

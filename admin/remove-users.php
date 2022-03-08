@@ -39,6 +39,17 @@
             width: fit-content !important;
         }
  
+        form {
+            transform: translate(0);
+        }
+
+        form .delete {
+            background: #ff3e3e;
+            border: none;
+            color: #fff;
+            padding: .5rem;
+        }
+
         .login-wrapper button {
             padding-block: .3rem;
         }
@@ -48,38 +59,7 @@
             color: #fff;
         } 
  
-    </style>
-
-            <div class="login-wrapper admin"> 
-
-                <div class="admin-dashboard">
-                    <div id="admin-dashboard-inner">
-                        
-                    <h1>DEPASA Marine Int'l</h1>
-                    
-                    <div class="form-body-wrapper">
-                        <div class="contact"> 
-                            <div class="record-button"><a href="records.php">VIEW ALL RECORDS</a></div>
-                        </div> 
-                        <div class="contact"> 
-                            <div class="record-button"><a href="admin.php">CREATE NEW USER</a></div>
-                        </div> 
-                        <div class="contact"> 
-                            <div class="record-button"><a href="users.php">VIEW ALL USERS</a></div>
-                        </div> 
-                        <div class="contact"> 
-                            <div class="record-button"><a href="remove-users.php">REMOVE USER</a></div>
-                        </div>  
-                        <div class="contact"> 
-                            <div class="record-button"><a href="logout.php">LOG OUT</a></div>
-                        </div> 
-                        <div>
-                            <p><?php echo $result_admin[0]['name']; ?></p>
-                            <p><?php echo $result_admin[0]['email']; ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </style> 
 
             <div class="box box-2">
                     <div class="auth">
@@ -92,7 +72,7 @@
                              
                         ?>
  
-                        <table>
+                        <table class='users'>
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
@@ -109,7 +89,7 @@
                                 <td>
                                     <form action="<?= $_SERVER['PHP_SELF']; ?>" method='post'>
                                         <input type="hidden" name="user_id" value="<?= $users['id'] ?>">
-                                        <button name="remove_user" type="submit" class="delete">Delete</button>
+                                        <button class='delete' name="remove_user" type="submit" class="delete">Delete</button>
                                     </form>
                                 </td>
                             </tr>
@@ -119,9 +99,7 @@
                         </table>        
                          
                     </div>
-                </div>
-            </form>
-        </div>
+                </div>  
     
 <?php
     include 'footer.php'

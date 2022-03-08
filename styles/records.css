@@ -41,7 +41,7 @@
     display: flex; 
 }
 
-.header-record-info h3 {
+.header-record-info p {
     margin-inline: 5rem;
 }
 

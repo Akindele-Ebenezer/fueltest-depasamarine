@@ -10,7 +10,7 @@
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
      
     
-    $header_info = "<h3>ID : [$id] Email : " . $result[0]['email'] . "</h3>";
+    $header_info = "<p>ID : [$id] Email : " . $result[0]['email'] . "</p>";
     include 'header.php';
      
     $sql_sample_no = "SELECT * FROM fuel_test_records WHERE uid = '$id'  GROUP BY sample_no ORDER BY sample_collection_date DESC;";

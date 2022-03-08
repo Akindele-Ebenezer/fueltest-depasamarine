@@ -39,17 +39,16 @@
     width: 100%;
 }
 
-.admin form .auth input,
-.admin form .auth button {
-    width: 100%;
-}
-.admin .form-body-wrapper {
-    margin-top: 2rem;
+@media (max-width: 906px) {
+    .admin form .auth input,
+    .admin form .auth button {
+        width: 100%;
+    }
 }
 
-.auth {
-    width: 100%;
-}
+.admin .form-body-wrapper {
+    margin-top: 2rem;
+} 
 
 @media (max-width: 742px) {
     

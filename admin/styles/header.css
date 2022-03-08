@@ -6,6 +6,7 @@
 header {
   background: #000;
   color: antiquewhite;
+  font-size: small;
   letter-spacing: .09rem;
   position: fixed;
   width: 100%;

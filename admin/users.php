@@ -32,7 +32,7 @@ $title = "FUEL TEST | Users";
 </style>
 
 
-<div class="login-wrapper">  
+    <div class="login-wrapper">  
         <div class="records"> 
             <form action="" method="post" class="table">
                 <button type="submit" name="export" id="export">Export to Excel</button>
@@ -57,11 +57,12 @@ $title = "FUEL TEST | Users";
                     </table>
                 </div>
             </form>
+        </div>
     </div>
 
 
 <?php
 
-    include 'footer.php'; ?>
+    include 'footer.php'; 
 
 ?>

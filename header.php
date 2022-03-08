@@ -29,11 +29,7 @@
     <title><?= $title; ?></title>
 
     
-    <style>
-
-        * {
-            font-size: 97%;            
-        }
+    <style> 
 
         .nav-sm-screen {
             background-image: linear-gradient( to bottom, var(--color-1), #111); 

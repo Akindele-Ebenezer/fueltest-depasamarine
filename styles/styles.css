@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
     margin: 0;
     padding: 0;
 }
@@ -79,6 +79,7 @@ form button:hover {
     align-self: center;
     background-image: linear-gradient( to bottom, var(--color-1), #111);
     color: antiquewhite;
+    height: 100vh;
 }
 
 .form-fuel-test h1 {
@@ -225,7 +226,7 @@ a:hover {
       }
     
     .form-fuel-test {
-        width: 30rem;
+        width: 23rem;
     }
      
     .form .input-container .input-wrapper select,
