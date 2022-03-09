@@ -160,7 +160,9 @@ label:not(.box-2 .auth label) {
 }
  
 .form .record-button { 
-    border-left: 10px solid var(--color-1);
+    /* border-left: 10px solid var(--color-1); */
+    /* border-radius: 1rem; */
+    /* border-top: 1px solid var(--color-1); */
     font-weight: bold;
     letter-spacing: .09rem;
     padding: .5rem; 
@@ -171,6 +173,12 @@ label:not(.box-2 .auth label) {
     display: block;
     text-decoration: none;
 }
+
+.form .contact  {
+    border: 1px solid var(--color-1);
+    border-radius: .5rem;
+    padding: .5rem;
+  }
 
 .form .record-success h1 {
     margin-bottom: 2rem;

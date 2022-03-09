@@ -39,6 +39,7 @@ button {
  
 .login-wrapper .auth h1 {
     border-bottom: 5px solid var(--color-1);
+    color: var(--color-1);
 }
 
 .login-wrapper .auth p button {

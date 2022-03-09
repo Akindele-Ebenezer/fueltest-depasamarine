@@ -5,7 +5,7 @@
     include 'admin-auth.php';
 
     $admin_id = $_SESSION['id'];
-    echo $admin_id;
+     
     $sql_admin = "SELECT * FROM admin_ WHERE id = '$admin_id';";
     $sql_query = mysqli_query($conn_admin, $sql_admin);
     $result_admin = mysqli_fetch_all($sql_query, MYSQLI_ASSOC);
@@ -79,26 +79,26 @@ if(isset($_POST['create_user'])) {
                     </div>
                 </div>
                 
-                            <div class="box box-2">
-                                <form action="<?= $_SERVER['PHP_SELF']; ?>" method='post'>
-                                    <div class="auth">
-                                        <h1>ADMIN - Add User</h1> 
-                                        <br /> 
-                                        <label for="name">Name</label> <span><?= $error_name; ?></span> <br />
-                                        <input type="text" value="<?= $name; ?>" name="create_user_name" placeholder="Enter Name"/>
-                                        <br />
-                                        <label for="email">Email</label> <span><?= $error_email; ?></span> <br />
-                                        <input type="email" value="<?= $email; ?>" name="create_user_email" placeholder="example@depasamarine.com"/>
-                                        <br />
-                                        <label for="password">Password</label> <span><?= $error_password; ?></span> <br />
-                                        <input type="password" name="create_user_password" placeholder="8+ Characters.." />
-                                        <br />
-                                        <button type="submit" name='create_user'>Create User</button>                  
-                                        <br /> 
-                                    </div> 
-                                </form>
-                            </div>
-                    
+                <div class="box box-2">
+                    <div class="admin-flex">
+                        <form action="<?= $_SERVER['PHP_SELF']; ?>" method='post'>
+                            <div class="auth">
+                                <h1>ADMIN - Add User</h1> 
+                                <br /> 
+                                <label for="name">Name</label> <span><?= $error_name; ?></span> <br />
+                                <input type="text" value="<?= $name; ?>" name="create_user_name" placeholder="Enter Name"/>
+                                <br />
+                                <label for="email">Email</label> <span><?= $error_email; ?></span> <br />
+                                <input type="email" value="<?= $email; ?>" name="create_user_email" placeholder="example@depasamarine.com"/>
+                                <br />
+                                <label for="password">Password</label> <span><?= $error_password; ?></span> <br />
+                                <input type="password" name="create_user_password" placeholder="8+ Characters.." />
+                                <br />
+                                <button type="submit" name='create_user'>Create User</button>                  
+                                <br /> 
+                            </div> 
+                        </form> 
+                    </div>
             </div>
 <?php
     include 'footer.php'

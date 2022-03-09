@@ -3,8 +3,17 @@
 }
 
 .admin .box-2 {
+    display: flex;
+    justify-content: space-evenly;
     overflow: scroll;
     width: 100vw;
+}
+
+.admin .contact  {
+    border: 1px solid var(--color-1);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: .5rem;
 }
 
 .admin-dashboard {
@@ -19,8 +28,7 @@
     width: 20rem;
 }
 
-#admin-dashboard-inner .record-button { 
-    border-left: 10px solid var(--color-1);
+#admin-dashboard-inner .record-button {  
     font-weight: bold;
     letter-spacing: .09rem;
     margin-block: .5rem;
@@ -37,6 +45,12 @@
 .admin form {
     transform: translate(0);
     width: 100%;
+} 
+
+.admin .admin-flex { 
+    border-radius: 1rem;
+    box-shadow: 1px 2px 19px #ddd; 
+    padding: 5rem; 
 }
 
 @media (max-width: 906px) {
