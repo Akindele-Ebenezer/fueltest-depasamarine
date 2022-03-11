@@ -3,6 +3,7 @@
 }
 
 .admin .box-2 {
+    background-image: linear-gradient(to right,#fff, #777);
     display: flex;
     justify-content: space-evenly;
     overflow: scroll;
@@ -48,8 +49,9 @@
 } 
 
 .admin .admin-flex { 
+    background: #fff;
     border-radius: 1rem;
-    box-shadow: 1px 2px 19px #ddd; 
+    box-shadow: 1px 2px 19px #999; 
     padding: 5rem; 
 }
 

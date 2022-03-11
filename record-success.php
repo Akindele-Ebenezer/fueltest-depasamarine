@@ -145,7 +145,7 @@
                         </div>
                     </ul>
                     <br>
-                    <button type="submit" name="save_changes">SAVE CHANGES</button>
+                    <center><button type="submit" name="save_changes">SAVE CHANGES</button></center>
                 </div>
             </div>
         </div>

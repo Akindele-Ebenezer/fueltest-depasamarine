@@ -40,6 +40,11 @@ if(isset($_POST['create_user'])) {
     
     
     <style>  
+        .login-wrapper input[type] {
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #888;
+        }
 
         .records-nav a:nth-child(2) {
             background: var(--color-1);
@@ -83,7 +88,7 @@ if(isset($_POST['create_user'])) {
                     <div class="admin-flex">
                         <form action="<?= $_SERVER['PHP_SELF']; ?>" method='post'>
                             <div class="auth">
-                                <h1>ADMIN - Add User</h1> 
+                                <h1>Add User</h1> 
                                 <br /> 
                                 <label for="name">Name</label> <span><?= $error_name; ?></span> <br />
                                 <input type="text" value="<?= $name; ?>" name="create_user_name" placeholder="Enter Name"/>

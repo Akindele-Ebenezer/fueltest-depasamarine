@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif; 
+    font-weight: unset;
     margin: 0;
     padding: 0;
 }
@@ -103,7 +104,9 @@ form button:hover {
     width: 21rem;
 }
 
-form .input-wrapper {
+form .input-wrapper { 
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 1px 2px 19px #ddd;
     display: flex;
     flex-wrap: wrap;
 }
@@ -126,13 +129,15 @@ form .input-wrapper div {
 }
 
 input,
-.form button {
-    border: 1px solid green; 
+.form button { 
     outline: none;
     padding: 1rem;
     width: 21rem;
 }
 
+input {
+    border: 1px solid #8c8c8c;  
+}
 input[placeholder] {
     color: var(--color-1);   
 }
@@ -225,6 +230,13 @@ a:hover {
     .form .input-container {
         margin-inline: 0rem;
     }
+}
+
+@media (max-width: 1586px) { 
+    form .input-wrapper div, 
+    .form .appearance-result {
+        width: 100% !important;
+    } 
 }
 
 @media (min-width: 1088px) {

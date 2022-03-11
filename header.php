@@ -29,7 +29,7 @@
     <title><?= $title; ?></title>
 
     
-    <style> 
+    <style>  
 
         .nav-sm-screen {
             background-image: linear-gradient( to bottom, var(--color-1), #111); 

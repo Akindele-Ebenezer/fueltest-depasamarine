@@ -1,16 +1,7 @@
 .align-self {
     align-self: center;
 }
-
-#export { 
-    padding: .5rem;
-    position: absolute;
-    right: 2rem;
-    top: 0;
-    width: fit-content;
-    z-index: 1;
-}
-
+ 
 .records {
     background: #f9f6f6;
     box-shadow: 1px 2px 19px #bbb;
@@ -87,6 +78,10 @@ table tr td {
 }
 
  
+table tr:nth-child(even) {
+    background: #ddd; 
+}
+
 table tr:nth-child(odd) {
     background: #ddd; 
 }

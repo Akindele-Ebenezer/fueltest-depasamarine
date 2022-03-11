@@ -6,6 +6,17 @@
     color: red;;
 } 
 
+.export {
+    transform: translateY(6.45rem);
+}
+ 
+.export button {
+    background: var(--color-1);
+    border: none;
+    color: #fff;
+    padding: .5rem;
+}
+
 .login {
     transform: translate(0);
 }

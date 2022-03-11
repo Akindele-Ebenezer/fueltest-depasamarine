@@ -38,6 +38,10 @@
 
     <style>
 
+        body {
+            font-size: small;
+        }
+
         .records-nav a:first-child {
             background: var(--color-1);
             color: #fff;
@@ -50,10 +54,12 @@
     }
     </style>
 
+    <form action="" method="post" class="export">
+        <button type="submit" name="export">Export to Excel</button>
+    </form>
     <div class="login-wrapper">  
         <div class="records">  
-            <form action="" method="post" class="table">
-                <button type="submit" name="export" id="export">Export to Excel</button>
+            
                 <div class="all-records">
                     <table>
                         <tr>
@@ -98,7 +104,7 @@
 
                     </table>
                 </div>
-            </form>
+            
         </div>
     </div>
 

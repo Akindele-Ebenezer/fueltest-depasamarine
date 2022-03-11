@@ -34,11 +34,15 @@
     
     
     <style>
+        body {
+            font-size: small;
+        }
 
         button {
             width: fit-content !important;
         }
  
+        
         form {
             transform: translate(0);
         }

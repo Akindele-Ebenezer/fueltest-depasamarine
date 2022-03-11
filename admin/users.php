@@ -23,6 +23,10 @@ $title = "FUEL TEST | Users";
 
 <style>
 
+    body {
+        font-size: small;
+    }
+
     .records-nav a:first-child {
         background: var(--color-1);
         color: #fff;
@@ -31,11 +35,12 @@ $title = "FUEL TEST | Users";
 
 </style>
 
+    <form action="" method="post" class="export">
+        <button type="submit" name="export">Export to Excel</button>
+    </form>
 
     <div class="login-wrapper">  
-        <div class="records"> 
-            <form action="" method="post" class="table">
-                <button type="submit" name="export" id="export">Export to Excel</button>
+        <div class="records">  
                 <div class="all-records">
                     <table class="users">
                         <tr>
@@ -56,7 +61,7 @@ $title = "FUEL TEST | Users";
 
                     </table>
                 </div>
-            </form>
+            
         </div>
     </div>
 

@@ -18,7 +18,7 @@ header {
   display: flex;
   height: 2rem;
   justify-content: space-between;
-  
+  padding: 2rem;
 }
 
 .header div {
@@ -28,6 +28,10 @@ header {
 .header div a, button a {
     color: antiquewhite;
     text-decoration: none;
+}
+
+.header-record-info p {
+  margin-inline: 5rem;
 }
 
 .header .toggle-icon img {
