@@ -1,5 +1,6 @@
 <?php 
     include 'conn-admin.php';
+    include 'admin-auth.php';
 
     $sql= "SELECT
     sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness,
