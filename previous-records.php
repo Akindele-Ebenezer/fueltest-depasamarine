@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
     include 'auth.php';
     
@@ -15,7 +15,7 @@
 
     global $total_records;
     $total_records = count($result); 
-    $header_info = "<p>Current User : <br>  $full_name </p> <p>Status : <br>  Online </p> <p>Total Records : <br>  " . count($result) . "</p> <p>No. of Users : <br>  " . count($result3) . " </p>";
+    $header_info = "<p>Current User [ _ID: " . $_SESSION['id'] . " ] <br>  $full_name </p> <p>Status : <br>  Online </p> <p>Total Records : <br>  " . count($result) . "</p> <p>No. of Users : <br>  " . count($result3) . " </p>";
     $title = 'Fuel Test | Previous Records'; 
  
     $_SESSION['sample_no'] = $total_records;
@@ -25,6 +25,7 @@
     echo $_SESSION["user_name"]; 
 
     if (isset($_POST['export'])) {
+	ob_clean();
  
         header("Content-Type: application/xls");    
         header("Content-Disposition: attachment; filename=DEPASA Fuel Test Records.xls");  
@@ -40,6 +41,15 @@
 
         body {
             font-size: small;
+        }
+
+        .edit-record-form {
+            transform: unset;
+        }
+
+        .edit-record-form .edit-record {
+            margin: unset;
+            width: unset;
         }
 
         .records-nav a:first-child {
@@ -62,7 +72,8 @@
             
                 <div class="all-records">
                     <table>
-                        <tr>
+                        <tr> 
+                            <th> _ID: [ <?= $_SESSION['id']; ?> ]</th>
                             <th> Sample No.</th>
                             <th> Sample Collection Date </th>
                             <th> Truck Plate No.</th>
@@ -85,6 +96,13 @@
                         ?>
                         <?php foreach($result as $fuel_test_record) : ?> 
                         <tr>
+                        <td>
+                            <form action="edit.php" method='post' class="edit-record-form">
+                                <input type="hidden" name="record_id" value="<?= $fuel_test_record['sample_no']; ?>">
+                                <input type="hidden" name="record_full_name" value="<?= $fuel_test_record['full_name']; ?>">
+                                <button class='edit-record' name="edit_record" type="submit">Edit</button>
+                            </form>
+                        </td>
                             <td><?= $fuel_test_record['sample_no']; ?></td>    
                             <td><?= $fuel_test_record['sample_collection_date']; ?></td>
                             <td><?= $fuel_test_record['truck_plate_no']; ?></td>

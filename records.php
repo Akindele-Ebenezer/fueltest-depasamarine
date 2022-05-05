@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
     include 'auth.php'; 
  
@@ -13,12 +13,13 @@
 
     $full_name = $result2[0]["name"];
 
-    $header_info = "<p>Current User : <br>  $full_name </p> <p>Status : <br>  Online </p>  <p>Total Records : <br> " . count($result1) . "</p> <p>No. of Users : <br> " . count($result3) . " </p>";
+    $header_info = "<p>Current User [ _ID: " . $_SESSION['id'] . " ] <br>  $full_name </p> <p>Status : <br>  Online </p>  <p>Total Records : <br> " . count($result1) . "</p> <p>No. of Users : <br> " . count($result3) . " </p>";
     $title = 'Fuel Test | All Records';
 
     include 'header.php'; 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	ob_clean();
 
         // $export = $_POST['export'];
         header("Content-Type: application/xls");    
@@ -64,9 +65,9 @@
                             <th> Tank No.</th>
                             <th> Apperance Result</th>
                             <th> Color</th>
-                            <th> Density at 27° C in Kg/l</th>
+                            <th> Density in Kg/l</th>
                             <th> Flash Point</th>
-                            <th> Temp</th>
+                            <th> Temp °C </th>
                             <th> Water ASTM h2709-16</th>
                             <th> Cleanliness</th>
                             <th> Date Of Test</th>

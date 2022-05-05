@@ -11,6 +11,7 @@ $title = "FUEL TEST | Users";
     $result_users = mysqli_fetch_all($query_users, MYSQLI_ASSOC);
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	ob_clean();
 
         // $export = $_POST['export'];
         header("Content-Type: application/xls");    

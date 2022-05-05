@@ -1,6 +1,5 @@
-<?php 
+﻿<?php 
     include 'conn-admin.php';
-    include 'admin-auth.php';
 
     $sql= "SELECT
     sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness,
@@ -18,12 +17,13 @@
     $result_admin = mysqli_fetch_all($query_admin, MYSQLI_ASSOC);     
     $full_name = $result_admin[0]["name"];  
  
-    $header_info = "<p>Current User : <br>  $full_name </p> <p>Status : <br>  Online </p>  <p>Total Records : <br> " . count($result_records) . "</p> <p>No. of Users :  <br>" . count($result_users) . " </p>";
+    $header_info = "<p>Current User [ _ID: " . $_SESSION['id'] . " ] <br>  $full_name </p> <p>Status : <br>  Online </p>  <p>Total Records : <br> " . count($result_records) . "</p> <p>No. of Users :  <br>" . count($result_users) . " </p>";
     $title = 'ADMIN | All Records';
 
     include 'header.php'; 
  
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	ob_clean();
 
         // $export = $_POST['export'];
         header("Content-Type: application/xls");    

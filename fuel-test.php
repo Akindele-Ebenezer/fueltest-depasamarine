@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
     include 'auth.php'; 
     $title = 'FUEL TEST | Depasamarine';
@@ -65,7 +65,7 @@
                 <div class="input-wrapper">
                     <div>
                         <label for="sample_number">Sample No.</label><br>
-                        <input type="text" name="sample_no" value="<?= $total_records + 1 . " - " . strtoupper($result[0]['email'][0]) . $total_records + 3; ?>">
+                        <input type="text" name="sample_no" value="<?= date("Ymd") . $total_records + 3; ?>">
                     </div>
 
                     <div>
@@ -87,6 +87,7 @@
                         <label for="apperance_result">Appearance Result</label><br>
                         <select name="appearance_result">
                             <option value="C/M">Select Appearance...</option>
+                            <option value="Bright">Bright</option>                            
                             <option value="Clear">Clear</option>
                             <option value="Muddy">Muddy</option>
                         </select>
@@ -96,14 +97,27 @@
                         <label for="color">Color</label><br> 
                         <select name="color">
                             <option>Choose Color...</option>
-                            <option value="Green">Green</option>
-                            <option value="red">Red</option>
-                            <option value="blue">Blue</option>
+                            <option value="0.5">0.5</option>
+                            <option value="1.0">1.0</option>
+                            <option value="1.5">1.5</option>
+ 			                <option value="2.0">2.0</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3.0">3.0</option>
+ 			                <option value="3.5">3.5</option>
+                            <option value="4.0">4.0</option>
+                            <option value="4.5">4.5</option>
+ 			                <option value="5.0">5.0</option>
+                            <option value="5.5">5.5</option>
+                            <option value="6.0">6.0</option>
+                            <option value="6.5">6.5</option>
+                            <option value="7.0">7.0</option>
+                            <option value="7.5">7.5</option>
+                            <option value="8.0">8.0</option>
                         </select>
                     </div>
 
                     <div>
-                        <label for="density">Density at 27° C in Kg/l</label><br>
+                        <label for="density">Density in Kg/m<sup>3</sup></label><br>
                         <input name="density" type="text" placeholder="Input Density...">
                     </div>
 
@@ -113,12 +127,12 @@
                     </div>
 
                     <div>
-                        <label for="temp">Temp</label><br>
+                        <label for="temp">Temp °C</label><br>
                         <input name="temp" type="text" placeholder="Temperature...">
                     </div>
 
                     <div>
-                        <label for="water">Water ASTM D2709-16</label><br>
+                        <label for="water">Water/Sediment % </label><br>
                         <input name="water" type="text" placeholder="Required...">
                     </div>
 
