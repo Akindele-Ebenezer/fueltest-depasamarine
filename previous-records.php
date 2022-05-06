@@ -18,7 +18,7 @@
     $header_info = "<p>Current User [ _ID: " . $_SESSION['id'] . " ] <br>  $full_name </p> <p>Status : <br>  Online </p> <p>Total Records : <br>  " . count($result) . "</p> <p>No. of Users : <br>  " . count($result3) . " </p>";
     $title = 'Fuel Test | Previous Records'; 
  
-    $_SESSION['sample_no'] = $total_records;
+     
 
     include 'header.php';
      
@@ -98,8 +98,19 @@
                         <tr>
                         <td>
                             <form action="edit.php" method='post' class="edit-record-form">
-                                <input type="hidden" name="record_id" value="<?= $fuel_test_record['sample_no']; ?>">
+                                <input type="hidden" name="record_sample_no" value="<?= $fuel_test_record['sample_no']; ?>">
                                 <input type="hidden" name="record_full_name" value="<?= $fuel_test_record['full_name']; ?>">
+                                <input type="hidden" name="record_sample_collection_date" value="<?= $fuel_test_record['sample_collection_date']; ?>">
+                                <input type="hidden" name="record_truck_plate_no" value="<?= $fuel_test_record['truck_plate_no']; ?>">
+                                <input type="hidden" name="record_tank_no" value="<?= $fuel_test_record['tank_no']; ?>">
+                                <input type="hidden" name="record_appearance_result" value="<?= $fuel_test_record['appearance_result']; ?>">
+                                <input type="hidden" name="record_color" value="<?= $fuel_test_record['color']; ?>">
+                                <input type="hidden" name="record_density" value="<?= $fuel_test_record['density']; ?>">
+                                <input type="hidden" name="record_flash_point" value="<?= $fuel_test_record['flash_point']; ?>">
+                                <input type="hidden" name="record_temp" value="<?= $fuel_test_record['temp']; ?>">
+                                <input type="hidden" name="record_water" value="<?= $fuel_test_record['water']; ?>">
+                                <input type="hidden" name="record_cleanliness" value="<?= $fuel_test_record['cleanliness']; ?>">
+                                <input type="hidden" name="record_date_of_test" value="<?= $fuel_test_record['date_of_test']; ?>">
                                 <button class='edit-record' name="edit_record" type="submit">Edit</button>
                             </form>
                         </td>

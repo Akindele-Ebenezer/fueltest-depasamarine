@@ -3,8 +3,7 @@
   ob_start(); 
   include 'config.php';
   error_reporting(0);
-  global $header_info;
-  $sample_no = $_SESSION['sample_no'];
+  global $header_info; 
   
 ?>
 

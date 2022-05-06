@@ -63,7 +63,7 @@
 
 
         $full_name = $_POST["edit_full_name"];
-        $sample_no = $_POST['edit_sample_no'];
+        // $sample_no = $_POST['edit_sample_no'];
         echo "<div class='alert'>
                     <div>
                         Changes have been made to your New Record (Sample No. $sample_no)
