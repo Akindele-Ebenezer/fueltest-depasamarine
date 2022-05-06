@@ -11,7 +11,7 @@
     date_of_test, full_name, uid 
     FROM fuel_test_records WHERE uid = '$uid' GROUP BY sample_no ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
-    $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
+    $result = mysqli_fetch_all($query, MYSQLI_ASSOC);  
 
     global $total_records;
     $total_records = count($result); 
@@ -25,7 +25,8 @@
     echo $_SESSION["user_name"]; 
 
     if (isset($_POST['export'])) {
-	ob_clean();
+
+	    ob_clean();
  
         header("Content-Type: application/xls");    
         header("Content-Disposition: attachment; filename=DEPASA Fuel Test Records.xls");  
@@ -48,8 +49,16 @@
         }
 
         .edit-record-form .edit-record {
-            margin: unset;
+            margin: 0 1rem;
             width: unset;
+        }
+
+        .edit-record-form img {                        
+            width: 3rem;
+        }
+
+        .edit-record-form img:hover {                        
+            cursor: pointer;
         }
 
         .records-nav a:first-child {
@@ -97,7 +106,8 @@
                         <?php foreach($result as $fuel_test_record) : ?> 
                         <tr>
                         <td>
-                            <form action="edit.php" method='post' class="edit-record-form">
+                            <form action="edit.php" method='post' class="edit-record-form"> 
+                                <img src="images/pdf.png">
                                 <input type="hidden" name="record_sample_no" value="<?= $fuel_test_record['sample_no']; ?>">
                                 <input type="hidden" name="record_full_name" value="<?= $fuel_test_record['full_name']; ?>">
                                 <input type="hidden" name="record_sample_collection_date" value="<?= $fuel_test_record['sample_collection_date']; ?>">

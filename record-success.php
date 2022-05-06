@@ -57,12 +57,25 @@
         $edit_cleanliness = $_POST["edit_cleanliness"];
         $edit_date_of_test = $_POST["edit_date_of_test"]; 
 
-        $sql = "UPDATE fuel_test_records SET sample_no = '$edit_sample_no', sample_collection_date = '$edit_sample_collection_date', truck_plate_no = '$edit_truck_plate_no', tank_no = '$edit_tank_no', appearance_result = '$edit_appearance_result', color = '$edit_color', density = '$edit_density', flash_point = '$edit_flash_point', temp = '$edit_temp', water = '$edit_water', cleanliness = '$edit_cleanliness', date_of_test = '$edit_date_of_test', full_name = '$edit_full_name' WHERE id = '$id';";
+        $full_name = $_POST["edit_full_name"];
+        $sample_no = $_POST["edit_sample_no"];
+        $sample_collection_date = $_POST["edit_sample_collection_date"];
+        $truck_plate_no = $_POST["edit_truck_plate_no"];
+        $tank_no = $_POST["edit_tank_no"];
+        $appearance_result = $_POST["edit_appearance_result"];
+        $color = $_POST["edit_color"];
+        $density = $_POST["edit_density"];
+        $flash_point = $_POST["edit_flash_point"];
+        $temp = $_POST["edit_temp"];
+        $water = $_POST["edit_water"];
+        $cleanliness = $_POST["edit_cleanliness"];
+        $date_of_test = $_POST["edit_date_of_test"];
+
+        $sql = "UPDATE fuel_test_records SET sample_no = '$edit_sample_no', sample_collection_date = '$edit_sample_collection_date', truck_plate_no = '$edit_truck_plate_no', tank_no = '$edit_tank_no', appearance_result = '$edit_appearance_result', color = '$edit_color', density = '$edit_density', flash_point = '$edit_flash_point', temp = '$edit_temp', water = '$edit_water', cleanliness = '$edit_cleanliness', date_of_test = '$edit_date_of_test', full_name = '$edit_full_name' WHERE sample_no = '$sample_no';";
 
         $query = mysqli_query($conn, $sql);
 
-
-        $full_name = $_POST["edit_full_name"];
+        // $full_name = $_POST["edit_full_name"];
         // $sample_no = $_POST['edit_sample_no'];
         echo "<div class='alert'>
                     <div>
@@ -97,9 +110,9 @@
                 </div>
             </div>
             <div class="input-container save-changes"> 
-                <div class="record-success">
-                    <h1> <?= $full_name; ?></h1>
-                    <p>Your RECORD with the SAMPLE NO. <?= $sample_no; ?> has been created Successfully. <br> You can edit this RECORD if there's any other changes, then click SAVE RECORD Button below to save changes. <br><br> <a href="fuel-test.php" class="link">Go here to Insert New Record.</a></p>
+                <div class="record-success"> 
+                    <h1> <?= $full_name; ?> <br> <small>Sample No: <?= $sample_no; ?> </small> </h1>
+                    <p>Your RECORD with the SAMPLE NO. <?= $sample_no; ?> has been created Successfully. <br> You can edit this RECORD if there's any other changes, then click SAVE RECORD Button below to save changes. <br><br> NB: Don't try to change or edit Sample No for a Record as no changes will be made, and such Record will not be identified. <br>You are to modify any other fields you want, not the Sample No. <br><br> <a href="fuel-test.php" class="link">Insert New Record.</a> <br>  <a href="previous-records.php" class="link">Edit Previous Records.</a></p>
                      
                     <ul>
                         <div class="input-wrapper">
