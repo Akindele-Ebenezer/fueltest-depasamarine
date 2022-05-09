@@ -32,6 +32,10 @@ body {
     overflow: hidden;
 }
  
+button {
+    border: none !important;
+}
+
 .form .appearance-result {
     width: 21rem;
 }
@@ -146,6 +150,13 @@ input[placeholder] {
     width: 45%;
 }
 
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: 4.2rem !important;
+    letter-spacing: .1rem;
+}
+
 input:focus {
     border-bottom: solid var(--color-1);
 }
@@ -232,12 +243,17 @@ a:hover {
     }
 }
 
-@media (max-width: 1586px) { 
+
+/* MODIFIED */
+
+/* @media (max-width: 1586px) { 
     form .input-wrapper div, 
     .form .appearance-result {
         width: 100% !important;
     } 
-}
+} */
+
+/* MODIFIED */
 
 @media (min-width: 1088px) {
     .form .save-changes {

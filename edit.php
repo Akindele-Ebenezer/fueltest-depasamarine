@@ -79,9 +79,19 @@
 ?>
 
 <style>
+    
     .form .record-success p:last-of-type { 
         display: none;
     }
+
+
+    @media (max-width: 1586px) { 
+        form .input-wrapper div, 
+        .form .appearance-result {
+            width: 100% !important;
+        } 
+    }
+
 </style>
 
 <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
