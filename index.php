@@ -75,7 +75,7 @@
 
     </style>
     
-    <form action="" class="login-wrapper login" method="post">  
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" class="login-wrapper login" method="post">  
             <div style="background: url(images/fuel-2.jpg); 
                 background-position: center;
                 background-repeat: no-repeat;

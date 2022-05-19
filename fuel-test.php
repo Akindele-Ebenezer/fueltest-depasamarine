@@ -19,6 +19,10 @@
  
     $total_records = count($result_sample_no);
 
+    $sql_users = "SELECT * FROM fuel_test_users;";
+    $query_users = mysqli_query($conn, $sql_users);
+    $result_users = mysqli_fetch_all($query_users, MYSQLI_ASSOC);
+    
 ?>
 
     
@@ -49,7 +53,7 @@
                         <div class="record-button"><a href="logout.php">LOG OUT</a></div>
                     </div> 
 
-                    <?= $result[0]['email'] == "tobi.akindele@gmail.com" ? " 
+                    <?= $result[0]['email'] == "awadhesh@depasamarine.com" ? " 
                     <div class=\"contact\"> 
                         <div class=\"record-button\"><a href=\"admin/index.php\">ADMIN</a></div>
                     </div> " : ""; ?>
@@ -152,12 +156,24 @@
                         <label for="full_name">Made By (Name)</label><br>
                         <input name="full_name" list="names" type="text" placeholder="Full Name...">
                         <datalist id="names">
-                            <option value="Akindele Ebenezer"> 
-                            <option value="Awadhesh Tiwari"> 
-                            <option value="Seyi Okuyemi"> 
-                            <option value="Sola Blessing"> 
-                            <option value="Akindele Stella">     
+
+                            <?php foreach ($result_users as $user) : ?>
+                                
+                                <option value="<?= $user['name']; ?> ">   
+
+                            <?php  endforeach; ?>
+
                         </datalist>
+                    </div> 
+                    
+                    <div>
+                        <label for="delivered_to">Delivered To</label><br>
+                        <input name="delivered_to" type="text" placeholder="Delivered To...">
+                    </div>
+                    
+                    <div>
+                        <label for="remarks">Remarks</label><br>
+                        <input name="remarks" type="text" placeholder="Remarks here...">
                     </div>
 
                 </div> 

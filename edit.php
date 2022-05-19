@@ -1,5 +1,8 @@
 <?php
 
+    ini_set('session.cache_limiter', 'public');
+    session_cache_limiter(false);
+
     include 'auth.php'; 
     $title = 'FUEL TEST | Edit Record';
     include 'header.php';
@@ -28,7 +31,8 @@
         $date_of_test = strtotime($_POST['record_date_of_test']);
         $date_of_test = date('Y-m-d', $date_of_test);
         $date_of_test = mysqli_real_escape_string($conn, $date_of_test);
-        $full_name = mysqli_real_escape_string($conn,  $_POST['record_full_name']);
+        $full_name = mysqli_real_escape_string($conn,  $_POST['record_full_name']); 
+        $delivered_to = mysqli_real_escape_string($conn,  $_POST['record_delivered_to']);
 
         
     }
@@ -48,8 +52,9 @@
         $edit_water = $_POST["edit_water"];
         $edit_cleanliness = $_POST["edit_cleanliness"];
         $edit_date_of_test = $_POST["edit_date_of_test"]; 
+        $edit_delivered_to = $_POST["edit_delivered_to"]; 
 
-        $sql = "UPDATE fuel_test_records SET sample_no = '$edit_sample_no', sample_collection_date = '$edit_sample_collection_date', truck_plate_no = '$edit_truck_plate_no', tank_no = '$edit_tank_no', appearance_result = '$edit_appearance_result', color = '$edit_color', density = '$edit_density', flash_point = '$edit_flash_point', temp = '$edit_temp', water = '$edit_water', cleanliness = '$edit_cleanliness', date_of_test = '$edit_date_of_test', full_name = '$edit_full_name' WHERE sample_no = '$edit_sample_no';";
+        $sql = "UPDATE fuel_test_records SET sample_no = '$edit_sample_no', sample_collection_date = '$edit_sample_collection_date', truck_plate_no = '$edit_truck_plate_no', tank_no = '$edit_tank_no', appearance_result = '$edit_appearance_result', color = '$edit_color', density = '$edit_density', flash_point = '$edit_flash_point', temp = '$edit_temp', water = '$edit_water', cleanliness = '$edit_cleanliness', date_of_test = '$edit_date_of_test', full_name = '$edit_full_name', delivered_to = '$edit_delivered_to' WHERE sample_no = '$edit_sample_no';";
 
         $query = mysqli_query($conn, $sql);
 
@@ -66,6 +71,7 @@
         $water = $_POST["edit_water"];
         $cleanliness = $_POST["edit_cleanliness"];
         $date_of_test = $_POST["edit_date_of_test"];
+        $delivered_to = $_POST["edit_delivered_to"];
 
         echo "<div class='alert'>
                     <div>
@@ -156,6 +162,9 @@
                             </div>
                             <div> 
                                 <li> <span>Date Of Test :</span> </li> <input type="date" name="edit_date_of_test" value="<?= $date_of_test; ?>" class="edit-input">
+                            </div>
+                            <div> 
+                                <li> <span>Delivered To :</span> </li> <input type="text" name="edit_delivered_to" value="<?= $delivered_to; ?>" class="edit-input">
                             </div>
                             <div>
                                 <li> <span>Full Name :</span> </li><input type="text" name="edit_full_name" value="<?= $full_name; ?>" class="edit-input">

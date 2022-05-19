@@ -6,7 +6,7 @@
 
     $sql= "SELECT
     sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness,
-    date_of_test, full_name, uid 
+    date_of_test, full_name, uid, delivered_to, remarks 
     FROM fuel_test_records GROUP BY sample_no;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
@@ -72,6 +72,8 @@
                             <th> Cleanliness</th>
                             <th> Date Of Test</th>
                             <th> Made By (Name)</th>
+                            <th> Delivered To</th>
+                            <th> Remarks</th>
                         </tr>
 
                         <?php foreach($result as $fuel_test_record) : ?>
@@ -90,6 +92,8 @@
                             <td><?= $fuel_test_record['cleanliness']; ?></td>
                             <td><?= $fuel_test_record['date_of_test']; ?></td>
                             <td><?= $fuel_test_record['full_name']; ?></td> 
+                            <td><?= $fuel_test_record['delivered_to']; ?></td>
+                            <td><?= $fuel_test_record['remarks']; ?></td>
                         </tr>
 
                         <?php endforeach; ?> 

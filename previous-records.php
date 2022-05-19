@@ -8,7 +8,7 @@
 
     $sql= "SELECT
     sample_no, sample_collection_date, truck_plate_no, tank_no, appearance_result, color, density, flash_point, temp, water, cleanliness,
-    date_of_test, full_name, uid 
+    date_of_test, full_name, uid, delivered_to, remarks 
     FROM fuel_test_records WHERE uid = '$uid' GROUP BY sample_no ORDER BY sample_collection_date DESC;";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_all($query, MYSQLI_ASSOC);  
@@ -76,6 +76,7 @@
     <form action="" method="post" class="export">
         <button type="submit" name="export">Export to Excel</button>
     </form>
+
     <div class="login-wrapper">  
         <div class="records">  
             
@@ -96,6 +97,8 @@
                             <th> Cleanliness</th>
                             <th> Date Of Test</th>
                             <th> Made By (Name)</th>
+                            <th> Delivered To</th>
+                            <th> Remarks</th>
                         </tr>
                         <?php   switch($total_records) {
                                         case 0:
@@ -120,6 +123,8 @@
                                 <input type="hidden" name="record_water" value="<?= $fuel_test_record['water']; ?>">
                                 <input type="hidden" name="record_cleanliness" value="<?= $fuel_test_record['cleanliness']; ?>">
                                 <input type="hidden" name="record_date_of_test" value="<?= $fuel_test_record['date_of_test']; ?>">  
+                                <input type="hidden" name="record_delivered_to" value="<?= $fuel_test_record['delivered_to']; ?>">  
+                                <input type="hidden" name="record_remarks" value="<?= $fuel_test_record['remarks']; ?>"> 
                                 <input type='image' name='generate_pdf_certificate_of_quality' class="generate-pdf-certificate-of-quality" src='images/pdf.png'> 
                             </form>
                             <form action="edit.php" method='post' class="edit-record-form">  
@@ -135,7 +140,9 @@
                                 <input type="hidden" name="record_temp" value="<?= $fuel_test_record['temp']; ?>">
                                 <input type="hidden" name="record_water" value="<?= $fuel_test_record['water']; ?>">
                                 <input type="hidden" name="record_cleanliness" value="<?= $fuel_test_record['cleanliness']; ?>">
-                                <input type="hidden" name="record_date_of_test" value="<?= $fuel_test_record['date_of_test']; ?>">
+                                <input type="hidden" name="record_date_of_test" value="<?= $fuel_test_record['date_of_test']; ?>"> 
+                                <input type="hidden" name="record_delivered_to" value="<?= $fuel_test_record['delivered_to']; ?>"> 
+                                <input type="hidden" name="record_remarks" value="<?= $fuel_test_record['remarks']; ?>"> 
                                 <button class='edit-record' name="edit_record" type="submit">Edit</button>
                             </form>
                         </td>
@@ -152,6 +159,8 @@
                             <td><?= $fuel_test_record['cleanliness']; ?></td>
                             <td><?= $fuel_test_record['date_of_test']; ?></td>
                             <td><?= $fuel_test_record['full_name']; ?></td> 
+                            <td><?= $fuel_test_record['delivered_to']; ?></td>
+                            <td><?= $fuel_test_record['remarks']; ?></td>
                         </tr>
 
                         <?php endforeach; ?> 
