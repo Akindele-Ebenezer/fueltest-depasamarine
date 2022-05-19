@@ -198,10 +198,12 @@ label:not(.box-2 .auth label) {
 
 .form .record-success h1 {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .form .record-success p:last-of-type {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .form .record-success li { 
